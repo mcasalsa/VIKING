@@ -25,7 +25,7 @@ public class HealthBar : MonoBehaviour {
     }
     public void TakeDamage(float amountDamage)
     {
-        // Math.Clamp per arrodonir i assegurar que no entrem en valos de vida menors a zero o superiors a 100.
+        // Math.Clamp per arrodonir i assegurar que no entrem en valors de vida menors a zero o superiors a 100.
         hp = Mathf.Clamp(hp - amountDamage, 0f, maxHp);
         if (hp <= 0)
         {

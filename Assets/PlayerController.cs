@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour {
     public float maxSpeed = 5f;
 	public float speed = 2f;
 	public bool grounded;
-    public bool disarmed;
     //public bool swordAtack = false;
     public float jumpPower = 6.5f;
 
@@ -27,36 +26,45 @@ public class PlayerController : MonoBehaviour {
     public Text shieldStatus;
     public Text swordStatus;
     public Text arrowsCounterText;
-    public bool NextLevel;
     private float arrowsCounterNum;
 
     //public float parallaxSpeed = 0.02f;
     public float parallaxSpeed = 1f;
-    public RawImage background00, background01, background02, background03;
+    public RawImage background00, background01, background02;
     //public RawImage background03;
     public RawImage platform;
 
 
+    // variables per fer compres d'articles.
+    private float num;
+    public Text coinsText;
+    private int sumPositiveCoins;
 
-    //private int points = 0;
-    //public Text pointsText;
+    // variables per les pocions de vida.
+    float hp, maxHp = 100f;
+    public Image health;
+    public Text potions;
+    public  bool nextlevel;
+  
 
     // Use this for initialization
     void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		spr = GetComponent<SpriteRenderer>();
-        arrow = GameObject.Find("Arrow"); 
+        arrow = GameObject.Find("Arrow"); ;
         healthbar = GameObject.Find("Healthbar");
         anim.SetBool("SwordAtack", false);
         anim.SetBool("BowAtack", false);
+        anim.SetBool("ArrowsAmunition", false);
         anim.SetBool("ShieldAtack", false);
         anim.SetBool("NextLevel", false);
-        //anim.SetBool("Disarmed", true);
-        arrowRotation = 0;
+        //anim.SetBool("Level",1f);
         shieldStatus.text = "Desactivat";
-        anim.SetBool("NextStatus", false);
-        NextLevel = false;
+        
+        arrowRotation = 0;
+        nextlevel = false;
+        
 
 
     }
@@ -66,17 +74,14 @@ public class PlayerController : MonoBehaviour {
 
         // per a cada fotograma es calcula la velocitat final del terra i els diferents backgrouns que conformen el parallax.
         // si h > 0 parallax dreta si h< parallax cap a l'esquerra.
-        //h = h * 0.125f;
+        h = h * 1.5f;
         float finalSpeed = parallaxSpeed * Time.deltaTime;
-              background00.uvRect = new Rect(background00.uvRect.x + finalSpeed * (h * 2f), 1f, 1f, 1f);
-               background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * (h*3f), 1f, 1f, 1f);
-        //h = h * 1.5f;
-        //background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * (h*1.5f), 1f, 1f, 1f);
-
-        //ok
-        //primera linea de boscos.
-        background02.uvRect = new Rect(background02.uvRect.x + finalSpeed * (h * 0.5f), 1f, 1f, 1f);
-        background03.uvRect = new Rect(background03.uvRect.x + finalSpeed * (h * 0.75f), 1f, 1f, 1f);
+                background00.uvRect = new Rect(background00.uvRect.x + finalSpeed * (h*2), 1f, 1f, 1f);
+                // background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * 0.1f, 1f, 1f, 1f);
+                h = h * 1.5f;
+                background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * (h/8), 1f, 1f, 1f);
+        background02.uvRect = new Rect(background02.uvRect.x + finalSpeed * (h /4), 1f, 1f, 1f);
+        //background03.uvRect = new Rect(background03.uvRect.x + finalSpeed * (h /8), 1f, 1f, 1f);
         //platform velocity = background velocity * 4;
         //platform.uvRect = new Rect(platform.uvRect.x + finalSpeed * 0.50f, 0f, 1f, 1f);
 
@@ -90,6 +95,24 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("BowAtack", false);
         //anim.SetBool("Shield", false);
         //anim.SetBool("ShieldAtack", false);
+
+        //prenem poció curativa
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            // comprovem si tenim pocions.
+            num = System.Int32.Parse(potions.text);
+           
+            if (num>0)
+            {
+                // la posicó fa que la barra de vida estigui al máxim.
+                hp = maxHp;
+                health.transform.localScale = new Vector2(hp / maxHp, 1);
+                
+                //restem una posió.
+                num = num - 1;
+                potions.text = (num).ToString();
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -107,12 +130,13 @@ public class PlayerController : MonoBehaviour {
 
             // comprovem si teneim fletxes.
             arrowsCounterNum = System.Int32.Parse(arrowsCounterText.text);
-            if (arrowsCounterNum > 0 & shieldStatus.text == "Desactivat")
+            //comprovar si tenim fletxes
+            if (arrowsCounterNum > 0)
             {
-
-
+                // desdativem l'escut per atacar amb fletxes.
+                anim.SetBool("ShieldAtack", false);
                 anim.SetBool("BowAtack", true);
-
+                
 
                 // quaternion.eduler ens permet aplicar la rotació de la fletxa.
 
@@ -126,30 +150,21 @@ public class PlayerController : MonoBehaviour {
             else
             {
                 // no tenim fletxes.
+                anim.SetBool("BowAtack", false);
             }
-
-
-
         }
 
         // Escut.
-        if (Input.GetKeyDown("3"))
+  
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            if (shieldStatus.text == "Desactivat")
+            if (shieldStatus.text == "Activat")
             {
-                anim.SetBool("ShieldAtack", true);
-                anim.Play("Player_Shield");
-                shieldStatus.text = "Activat";
-            }
-            else
-            {
-                shieldStatus.text = "Desactivat";
                 anim.SetBool("ShieldAtack", false);
+                anim.Play("Player_Shield");
             }
         }
-
-
-
+     
 
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
             if (grounded) {
@@ -220,10 +235,6 @@ public class PlayerController : MonoBehaviour {
         {
             arrowRotation = 180;
         }
-
-       
-
-
     }
 
 	void OnBecameInvisible(){
@@ -257,45 +268,67 @@ public class PlayerController : MonoBehaviour {
         //Parallax();
     }
 
+
+
+    // compra del arc.
     void OnTriggerEnter2D(Collider2D collider)
     {
-        // si piquem amb una moneda incrementem el contador de monedes en 1.
+        // comprovem si tenim prous monedes per comprar el arc.
+        sumPositiveCoins = System.Int32.Parse(coinsText.text);
 
-
-
-        if (collider.tag == "Sword")
+        if (sumPositiveCoins >= 5)
         {
-            anim.SetBool("Disarmed", false);
+            if (collider.tag == "ShieldArticleShop")
+            {
+                //sumPositiveCoins = sumPositiveCoins - 5;
+                //coinsText.text = (sumPositiveCoins).ToString();
+                //Destroy(gameObject);
+                //activem l'arma arc.
+                //anim.SetBool("ShieldAtack", true);
+                shieldStatus.text = "Activat";
+            }
+           // else
+           // {
+             //   //no tenim monedes suficients per comprar l'escut.
+            //    //anim.SetBool("ShieldAtack", false);
+             //   shieldStatus.text = "Desactivat";
+           // }
 
+
+        }
+        else
+        {
+            // no tenim prou monedes per comprar 10 fletxes.
+            anim.SetBool("BowAtack", false);
+            anim.SetBool("ArrowsAmunition", false);
+        }
+
+        // recollim el idol i permetem el pas al seguent nivell.
+        if (collider.tag == "Idol")
+        {
+            nextlevel = true;
+            //sumPositiveCoins = sumPositiveCoins - 5;
+            //coinsText.text = (sumPositiveCoins).ToString();
+            //Destroy(gameObject);
+            //activem l'arma arc.
+            //anim.SetBool("NextLevel", true);
+            //shieldStatus.text = "Activat";
+            
         }
 
         if (collider.tag == "ToIsland")
         {
-           
-            if (NextLevel== true)
+
+            if (nextlevel == true)
             {
-                //Final de nivell i tenim el idol. Passem al següent nivell.
+                // Tenim el idol, anem al següent nivell.
                 SceneManager.LoadScene("MainMenu");
             }
+            else
             {
-                // Final de nivell pero no tenim el idol. Hem de continuar buscant.
+                // no hem trobat el idol, encara no podem passar de nivell.
+                // SceneManager.LoadScene("MainMenu");
             }
-                
-            
-
         }
-
-        if (collider.tag == "Idol")
-        {
-
-            NextLevel = true;
-            
-
-        }
-
-
-
-
-
     }
 }
