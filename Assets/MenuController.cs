@@ -26,6 +26,18 @@ public class MenuController : MonoBehaviour {
             case "play":
                 SceneManager.LoadScene("Phase_A");
                 break;
+            // carreguem menú.
+            case "menu":
+                SceneManager.LoadScene("MainMenu");
+                break;
+            // Introdució-història del joc.
+            case "intro":
+                SceneManager.LoadScene("Intro");
+                break;
+            // sortir joc.
+            case "help":
+                SceneManager.LoadScene("Help");
+                break;
             // sortir joc.
             case "exit":
                 Application.Quit();
