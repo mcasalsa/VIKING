@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour {
     // hp hit points, maxHP = 100 punts de vida del personatge.
@@ -49,7 +50,8 @@ public class HealthBar : MonoBehaviour {
             {
                 // numero de vides esgotat. Game Over.
                 lifeCanvas.ChangeLife(lifes);
-            }
+                SceneManager.LoadScene("GameOver");
+                            }
         }
         else
         {

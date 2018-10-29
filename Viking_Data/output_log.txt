@@ -7,88 +7,24 @@ Direct3D:
     VRAM:     848 MB
     Driver:   21.21.13.6909
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.257 seconds
-Platform assembly: D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Projecte UOC\Desenvolupament\V131\Viking\Viking_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.170 seconds
+Platform assembly: D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\V132\Viking\Viking_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.779672 ms
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 14.380201 ms
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 527.
-Total: 2.442185 ms (FindLiveObjects: 0.071376 ms CreateObjectMapping: 0.073708 ms MarkObjects: 2.068043 ms  DeleteObjects: 0.228123 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 37.475765 ms
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 500.
-Total: 1.299699 ms (FindLiveObjects: 0.070443 ms CreateObjectMapping: 0.073708 ms MarkObjects: 0.733355 ms  DeleteObjects: 0.419393 ms)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.925091 ms
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 527.
-Total: 0.689036 ms (FindLiveObjects: 0.066711 ms CreateObjectMapping: 0.039186 ms MarkObjects: 0.454848 ms  DeleteObjects: 0.126891 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.726824 ms
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 500.
-Total: 0.498233 ms (FindLiveObjects: 0.027057 ms CreateObjectMapping: 0.027057 ms MarkObjects: 0.286904 ms  DeleteObjects: 0.156747 ms)
-
+UnloadTime: 4.457979 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.736620 ms
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 527.
-Total: 0.425924 ms (FindLiveObjects: 0.028923 ms CreateObjectMapping: 0.027057 ms MarkObjects: 0.285038 ms  DeleteObjects: 0.083505 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.733821 ms
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 500.
-Total: 0.567277 ms (FindLiveObjects: 0.070443 ms CreateObjectMapping: 0.051782 ms MarkObjects: 0.286904 ms  DeleteObjects: 0.156747 ms)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.657780 ms
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 527.
-Total: 0.437120 ms (FindLiveObjects: 0.027990 ms CreateObjectMapping: 0.027057 ms MarkObjects: 0.296701 ms  DeleteObjects: 0.084905 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.754348 ms
-
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 500.
-Total: 0.513628 ms (FindLiveObjects: 0.027524 ms CreateObjectMapping: 0.028457 ms MarkObjects: 0.290636 ms  DeleteObjects: 0.166077 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.615061 ms
+UnloadTime: 27.143944 ms
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (113)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -1078,17 +1014,11 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 12034.
-Total: 4.296100 ms (FindLiveObjects: 0.661512 ms CreateObjectMapping: 0.291102 ms MarkObjects: 2.209862 ms  DeleteObjects: 1.132222 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 23.649776 ms
-
-Unloading 246 unused Assets to reduce memory usage. Loaded Objects now: 500.
-Total: 15.351945 ms (FindLiveObjects: 0.044318 ms CreateObjectMapping: 0.042919 ms MarkObjects: 0.297167 ms  DeleteObjects: 14.964741 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 12045.
+Total: 8.044982 ms (FindLiveObjects: 0.480972 ms CreateObjectMapping: 0.171676 ms MarkObjects: 2.268176 ms  DeleteObjects: 5.122291 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 2340 -> priority: 1 
-  Thread -> id: 4410 -> priority: 1 
-  Thread -> id: 1ee4 -> priority: 1 
-  Thread -> id: 2538 -> priority: 1 
+  Thread -> id: 2b4c -> priority: 1 
+  Thread -> id: 478 -> priority: 1 
+  Thread -> id: 3ffc -> priority: 1 
+  Thread -> id: 3abc -> priority: 1 
