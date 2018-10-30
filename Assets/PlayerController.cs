@@ -45,6 +45,12 @@ public class PlayerController : MonoBehaviour {
     public Image health;
     public Text potions;
     public  bool nextlevel;
+
+    // variables de so.
+    public AudioClip jumpSound;
+    public AudioClip damageSound;
+    public AudioClip swordSound;
+    AudioSource soundSource;
   
 
     // Use this for initialization
@@ -64,8 +70,9 @@ public class PlayerController : MonoBehaviour {
         
         arrowRotation = 0;
         nextlevel = false;
-        
 
+        // so.
+        soundSource = GetComponent<AudioSource>();
 
     }
 
@@ -121,6 +128,8 @@ public class PlayerController : MonoBehaviour {
             swordStatus.text = "Activat";
             //anim.SetBool("SwordAtack", false);
             //swordAtack = false;
+            soundSource.clip = swordSound;
+            soundSource.Play();
         }
 
 
@@ -165,15 +174,19 @@ public class PlayerController : MonoBehaviour {
             }
         }
      
-
+        // saltem.
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
+           
             if (grounded) {
                 jump = true;
                 doubleJump = true;
-
+                soundSource.clip = jumpSound;
+                soundSource.Play();
             } else if (doubleJump) {
                 jump = true;
                 doubleJump = false;
+                soundSource.clip = jumpSound;
+                soundSource.Play();
             }
         }
 
@@ -214,7 +227,6 @@ public class PlayerController : MonoBehaviour {
 		if (h < -0.1f){
 			transform.localScale = new Vector3(-1f, 1f, 1f);
             Parallax(h);
-
         }
 
 		if (jump){
@@ -228,8 +240,6 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             arrowRotation = 0;
-
-
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -260,11 +270,16 @@ public class PlayerController : MonoBehaviour {
 
         // Restem vida enviant y¡un missage a la fució TakeDamage del scrot HealthBar.
         healthbar.SendMessage("TakeDamage",15);
+
+
+        soundSource.clip = damageSound;
+        soundSource.Play();
     }
 
 	void EnableMovement(){
 		movement = true;
 		spr.color = Color.white;
+        
         //Parallax();
     }
 
