@@ -50,6 +50,12 @@ public class PlayerController : MonoBehaviour {
     public AudioClip jumpSound;
     public AudioClip damageSound;
     public AudioClip swordSound;
+    public AudioClip coinSound;
+    public AudioClip potionSound;
+    public AudioClip negativeCoinSound;
+    public AudioClip shootingArrowSound;
+    public AudioClip foodSound;
+
     AudioSource soundSource;
   
 
@@ -114,7 +120,10 @@ public class PlayerController : MonoBehaviour {
                 // la posicó fa que la barra de vida estigui al máxim.
                 hp = maxHp;
                 health.transform.localScale = new Vector2(hp / maxHp, 1);
-                
+
+                // so de restauració de vida.
+                soundSource.clip = potionSound;
+                soundSource.Play();
                 //restem una posió.
                 num = num - 1;
                 potions.text = (num).ToString();
@@ -154,6 +163,8 @@ public class PlayerController : MonoBehaviour {
                 // restem una fletxa.
                 arrowsCounterNum = System.Int32.Parse(arrowsCounterText.text);
                 arrowsCounterText.text = (--arrowsCounterNum).ToString();
+                soundSource.clip = shootingArrowSound;
+                soundSource.Play();
 
             }
             else
@@ -346,5 +357,25 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
+        if (collider.tag == "PositiveCoin")
+        {
+            // so recollir moneda.
+            soundSource.clip = coinSound;
+            soundSource.Play();
+        }
+        if (collider.tag == "NegativeCoin")
+        {
+            // so recollir moneda falsa.
+            soundSource.clip = negativeCoinSound;
+            soundSource.Play();
+        }
+        if (collider.tag == "Food")
+        {
+            // so recollir moneda falsa.
+            soundSource.clip = foodSound;
+            soundSource.Play();
+        }
     }
+
 }
+

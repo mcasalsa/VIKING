@@ -1,15 +1,21 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+
 
 public class PositiveCoin : MonoBehaviour
 {
     public Text coinsText;
     private int sumPositiveCoins;
+   
+
+ 
+
     // Use this for initialization
     void Start()
     {
-        //sumPositiveCoins = 0;
+      
     }
 
     // Update is called once per frame
@@ -27,11 +33,14 @@ public class PositiveCoin : MonoBehaviour
 
         if (collider.tag == "Player")
         {
-            Destroy(gameObject);
+            
 
             sumPositiveCoins = System.Int32.Parse(coinsText.text);
             coinsText.text = (++sumPositiveCoins).ToString();
 
+           
+            
+            Destroy(gameObject);
         }
     }
 }

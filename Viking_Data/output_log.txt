@@ -7,33 +7,25 @@ Direct3D:
     VRAM:     848 MB
     Driver:   21.21.13.6909
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.168 seconds
-Platform assembly: D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Projecte UOC\Desenvolupament\V137\Viking\Viking_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.185 seconds
+Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 4.550815 ms
+UnloadTime: 3.165748 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 27.219986 ms
+UnloadTime: 5.319632 ms
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (113)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (21)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -89,6 +81,14 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (154)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (108)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -105,14 +105,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (144)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (70)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -122,6 +114,14 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (91)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (157)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -169,7 +169,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (31)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (152)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -217,22 +217,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (45)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (128)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
 Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
@@ -254,14 +238,6 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (136)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (19)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -325,14 +301,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (42)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (132)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -389,14 +357,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (46)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (106)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -412,22 +372,6 @@ The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins 
 Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (32)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (142)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
 
 Default clip could not be found in attached animations list.
  
@@ -473,6 +417,14 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (150)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (62)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -481,7 +433,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (43)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (146)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -497,31 +449,15 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (120)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (60)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (30)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (64)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (159)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -545,7 +481,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (27)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (145)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -577,6 +513,14 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (161)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (58)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -601,21 +545,13 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (121)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (149)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
 Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (44)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
 
 Default clip could not be found in attached animations list.
  
@@ -637,7 +573,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (24)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (147)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -677,23 +613,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (36)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (35)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (48)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -717,6 +637,14 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (151)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (119)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -726,6 +654,14 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (75)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (153)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -773,14 +709,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (56)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (114)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -805,14 +733,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (49)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (104)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -821,7 +741,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (126)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (148)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -865,14 +785,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (40)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (23)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -897,6 +809,14 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (156)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (79)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -905,7 +825,19 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (123)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (155)' must be marked as Legacy.
+ 
+(Filename:  Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (163)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -929,14 +861,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (127)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'NegativeCoins (1)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -953,7 +877,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (122)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (158)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -969,23 +893,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (50)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (140)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (47)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -1009,14 +917,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (41)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'NegativeCoins (2)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -1025,7 +925,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (20)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (160)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -1033,15 +933,7 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (143)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (124)' must be marked as Legacy.
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (162)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -1078,14 +970,6 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (53)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (125)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -1166,11 +1050,11 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 12377.
-Total: 5.465643 ms (FindLiveObjects: 0.959613 ms CreateObjectMapping: 0.232789 ms MarkObjects: 3.038386 ms  DeleteObjects: 1.232988 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 12376.
+Total: 3.202602 ms (FindLiveObjects: 0.465578 ms CreateObjectMapping: 0.174008 ms MarkObjects: 1.699968 ms  DeleteObjects: 0.862580 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 4624 -> priority: 1 
-  Thread -> id: 19dc -> priority: 1 
-  Thread -> id: 152c -> priority: 1 
-  Thread -> id: 2684 -> priority: 1 
+  Thread -> id: 3694 -> priority: 1 
+  Thread -> id: 2fa0 -> priority: 1 
+  Thread -> id: 29b0 -> priority: 1 
+  Thread -> id: 389c -> priority: 1 
