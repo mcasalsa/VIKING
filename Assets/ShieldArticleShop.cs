@@ -8,10 +8,14 @@ public class ShieldArticleShop : MonoBehaviour {
     public Text coinsText;
     private int sumPositiveCoins;
     public Text shieldStatus;
+    public AudioClip itemShopSound;
+    AudioSource soundSource;
 
     // Use this for initialization
     void Start () {
         //shieldStatus.text = "Desactivat";
+        // so.
+        soundSource = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -30,7 +34,10 @@ public class ShieldArticleShop : MonoBehaviour {
                 shieldStatus.text = "Activat";
 
                 Destroy(gameObject);
+                soundSource.clip = itemShopSound;
+                soundSource.Play();
             }
         }
+       
     }
 }

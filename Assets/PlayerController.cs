@@ -55,6 +55,9 @@ public class PlayerController : MonoBehaviour {
     public AudioClip negativeCoinSound;
     public AudioClip shootingArrowSound;
     public AudioClip foodSound;
+    public AudioClip itemShopSound;
+
+
 
     AudioSource soundSource;
   
@@ -375,6 +378,14 @@ public class PlayerController : MonoBehaviour {
             soundSource.clip = foodSound;
             soundSource.Play();
         }
+        if (collider.tag == "ItemShop")
+        {
+            // so recollir moneda falsa.
+            soundSource.clip = itemShopSound;
+            soundSource.Play();
+
+        }
+
     }
 
 }

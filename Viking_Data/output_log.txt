@@ -7,32 +7,24 @@ Direct3D:
     VRAM:     848 MB
     Driver:   21.21.13.6909
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.185 seconds
-Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Projecte UOC\Desenvolupament\V143\Viking\Viking_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.191 seconds
+Platform assembly: D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\V144\Viking\Viking_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.165748 ms
+UnloadTime: 4.520498 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.319632 ms
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (113)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
+UnloadTime: 5.330829 ms
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (81)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -193,14 +185,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (134)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (85)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -342,14 +326,6 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (73)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (55)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
 
@@ -769,14 +745,6 @@ Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (33)' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (89)' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -1050,11 +1018,80 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 12376.
-Total: 3.202602 ms (FindLiveObjects: 0.465578 ms CreateObjectMapping: 0.174008 ms MarkObjects: 1.699968 ms  DeleteObjects: 0.862580 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 12692.
+Total: 3.377078 ms (FindLiveObjects: 0.553749 ms CreateObjectMapping: 0.174008 ms MarkObjects: 1.775543 ms  DeleteObjects: 0.871910 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ArrowsArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShieldArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PotionArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PotionArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Scene 'GameOver' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 140)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Hearts.ChangeLife (Int32 pos) [0x00000] in <filename unknown>:0 
+  at HealthBar.TakeDamage (Single amountDamage) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.GameObject:SendMessage(String, Object)
+PlayerController:EnemyKnockBack(Single)
+UnityEngine.Component:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.Component:SendMessage(String, Object)
+EnemySnakeController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ArrowsArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShieldArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PotionArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PotionArticleShop.OnTriggerEnter2D (UnityEngine.Collider2D collider) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Hearts.ChangeLife (Int32 pos) [0x00000] in <filename unknown>:0 
+  at HealthBar.TakeDamage (Single amountDamage) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.GameObject:SendMessage(String, Object)
+PlayerController:EnemyKnockBack(Single)
+UnityEngine.Component:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.Component:SendMessage(String, Object)
+EnemyFireController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 3694 -> priority: 1 
-  Thread -> id: 2fa0 -> priority: 1 
-  Thread -> id: 29b0 -> priority: 1 
-  Thread -> id: 389c -> priority: 1 
+  Thread -> id: 4310 -> priority: 1 
+  Thread -> id: 1e84 -> priority: 1 
+  Thread -> id: 2a0c -> priority: 1 
+  Thread -> id: 3fb8 -> priority: 1 

@@ -11,11 +11,13 @@ public class PotionArticleShop : MonoBehaviour
 
     public Text coinsText;
     private int sumPositiveCoins;
-
+    public AudioClip itemShopSound;
+    AudioSource soundSource;
     // Use this for initialization
     void Start()
     {
-
+        // so.
+        soundSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -51,6 +53,9 @@ public class PotionArticleShop : MonoBehaviour
                 num = num +1;
                 potionsCount.text = (num).ToString();
                 Destroy(gameObject);
+                // so compra article.
+                soundSource.clip = itemShopSound;
+                soundSource.Play();
             }
             else
             {

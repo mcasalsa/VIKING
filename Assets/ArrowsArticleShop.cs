@@ -11,11 +11,13 @@ public class ArrowsArticleShop : MonoBehaviour
 
     public Text coinsText;
     private int sumPositiveCoins;
-
+    public AudioClip itemShopSound;
+    AudioSource soundSource;
     // Use this for initialization
     void Start()
     {
-
+        // so.
+        soundSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,6 +49,10 @@ public class ArrowsArticleShop : MonoBehaviour
                 // hem comprat 10 fletxes restem 10 monedes.
                 sumPositiveCoins = sumPositiveCoins - 11;
                 coinsText.text = (++sumPositiveCoins).ToString();
+
+                // so compra article.
+                soundSource.clip = itemShopSound;
+                soundSource.Play();
             }
             else
             {
