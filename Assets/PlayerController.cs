@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour {
     public Text arrowsCounterText;
     private float arrowsCounterNum;
 
+
+
+
     //public float parallaxSpeed = 0.02f;
     public float parallaxSpeed = 1f;
     public RawImage background00, background01, background02;
@@ -83,6 +86,9 @@ public class PlayerController : MonoBehaviour {
         // so.
         soundSource = GetComponent<AudioSource>();
 
+        // inicialment guardarem record 0 al PlayerPrefs
+        //currentPoints = 0;
+        //recordText.text = GetMaxScore().ToString();
     }
 
     void Parallax(float h)
@@ -387,6 +393,6 @@ public class PlayerController : MonoBehaviour {
         }
 
     }
-
+    
 }
 

@@ -33,9 +33,9 @@ public class MenuIntroController : MonoBehaviour
                 SceneManager.LoadScene("MainMenu");
                 break;
             // sortir joc.
-            case "exit":
-                Application.Quit();
-                break;
+            //case "exit":
+                //Application.Quit();
+                //break;
         }
     }
 }
