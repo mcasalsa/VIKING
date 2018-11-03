@@ -42,6 +42,14 @@ public class MenuController : MonoBehaviour {
             case "help":
                 SceneManager.LoadScene("Help");
                 break;
+            // opcions audio i gráfiques.
+            case "options":
+                SceneManager.LoadScene("NotImplemented");
+                break;
+            // carregar una partida.
+            case "load":
+                SceneManager.LoadScene("NotImplemented");
+                break;
             // sortir joc.
             case "exit":
                 Application.Quit();

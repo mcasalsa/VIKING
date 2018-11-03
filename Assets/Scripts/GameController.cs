@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour {
 	void Update () {
         //Parallax();
         currentPointsNum = System.Int32.Parse(currentPointsText.text);
-        if (currentPointsNum >= GetMaxScore());
+        if (currentPointsNum >= GetMaxScore())
         {
             // hem fet record i el desem.
             PlayerPrefs.SetInt("Max Points", currentPointsNum);

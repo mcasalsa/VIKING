@@ -20,7 +20,7 @@ public class AcidWaterEnemyController : MonoBehaviour
     }
 
     // Update is called once per frame
-    
+
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -30,15 +30,13 @@ public class AcidWaterEnemyController : MonoBehaviour
             if (transform.position.y + yOffset < col.transform.position.y)
             {
                 col.SendMessage("EnemyJump");
-                //Destroy(gameObject);
 
-                // Enemic abatut.
 
             }
             else
             {
                 col.SendMessage("EnemyKnockBack", transform.position.x);
-                // Destroy(gameObject);
+
             }
         }
 

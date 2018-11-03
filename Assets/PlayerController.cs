@@ -59,8 +59,14 @@ public class PlayerController : MonoBehaviour {
     public AudioClip shootingArrowSound;
     public AudioClip foodSound;
     public AudioClip itemShopSound;
+    public AudioClip NoitemShopSound;
+    public AudioClip idolSound;
+    public AudioClip extraLifeSound;
 
 
+
+    // pausa.
+    public bool pauseGame;
 
     AudioSource soundSource;
   
@@ -77,6 +83,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("ArrowsAmunition", false);
         anim.SetBool("ShieldAtack", false);
         anim.SetBool("NextLevel", false);
+
         //anim.SetBool("Level",1f);
         shieldStatus.text = "Desactivat";
         
@@ -89,6 +96,7 @@ public class PlayerController : MonoBehaviour {
         // inicialment guardarem record 0 al PlayerPrefs
         //currentPoints = 0;
         //recordText.text = GetMaxScore().ToString();
+
     }
 
     void Parallax(float h)
@@ -98,11 +106,11 @@ public class PlayerController : MonoBehaviour {
         // si h > 0 parallax dreta si h< parallax cap a l'esquerra.
         h = h * 1.5f;
         float finalSpeed = parallaxSpeed * Time.deltaTime;
-                background00.uvRect = new Rect(background00.uvRect.x + finalSpeed * (h*2), 1f, 1f, 1f);
+                //background00.uvRect = new Rect(background00.uvRect.x + finalSpeed * (h*2), 1f, 1f, 1f);
                 // background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * 0.1f, 1f, 1f, 1f);
                 h = h * 1.5f;
                 background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * (h/8), 1f, 1f, 1f);
-        background02.uvRect = new Rect(background02.uvRect.x + finalSpeed * (h /4), 1f, 1f, 1f);
+        //background02.uvRect = new Rect(background02.uvRect.x + finalSpeed * (h /4), 1f, 1f, 1f);
         //background03.uvRect = new Rect(background03.uvRect.x + finalSpeed * (h /8), 1f, 1f, 1f);
         //platform velocity = background velocity * 4;
         //platform.uvRect = new Rect(platform.uvRect.x + finalSpeed * 0.50f, 0f, 1f, 1f);
@@ -119,6 +127,9 @@ public class PlayerController : MonoBehaviour {
         //anim.SetBool("ShieldAtack", false);
 
         //prenem poció curativa
+
+       
+
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             // comprovem si tenim pocions.
@@ -308,64 +319,6 @@ public class PlayerController : MonoBehaviour {
     // compra del arc.
     void OnTriggerEnter2D(Collider2D collider)
     {
-        // comprovem si tenim prous monedes per comprar el arc.
-        sumPositiveCoins = System.Int32.Parse(coinsText.text);
-
-        if (sumPositiveCoins >= 5)
-        {
-            if (collider.tag == "ShieldArticleShop")
-            {
-                //sumPositiveCoins = sumPositiveCoins - 5;
-                //coinsText.text = (sumPositiveCoins).ToString();
-                //Destroy(gameObject);
-                //activem l'arma arc.
-                //anim.SetBool("ShieldAtack", true);
-                shieldStatus.text = "Activat";
-            }
-           // else
-           // {
-             //   //no tenim monedes suficients per comprar l'escut.
-            //    //anim.SetBool("ShieldAtack", false);
-             //   shieldStatus.text = "Desactivat";
-           // }
-
-
-        }
-        else
-        {
-            // no tenim prou monedes per comprar 10 fletxes.
-            anim.SetBool("BowAtack", false);
-            anim.SetBool("ArrowsAmunition", false);
-        }
-
-        // recollim el idol i permetem el pas al seguent nivell.
-        if (collider.tag == "Idol")
-        {
-            nextlevel = true;
-            //sumPositiveCoins = sumPositiveCoins - 5;
-            //coinsText.text = (sumPositiveCoins).ToString();
-            //Destroy(gameObject);
-            //activem l'arma arc.
-            //anim.SetBool("NextLevel", true);
-            //shieldStatus.text = "Activat";
-            
-        }
-
-        if (collider.tag == "ToIsland")
-        {
-
-            if (nextlevel == true)
-            {
-                // Tenim el idol, anem al següent nivell.
-                SceneManager.LoadScene("MainMenu");
-            }
-            else
-            {
-                // no hem trobat el idol, encara no podem passar de nivell.
-                // SceneManager.LoadScene("MainMenu");
-            }
-        }
-
         if (collider.tag == "PositiveCoin")
         {
             // so recollir moneda.
@@ -380,19 +333,112 @@ public class PlayerController : MonoBehaviour {
         }
         if (collider.tag == "Food")
         {
-            // so recollir moneda falsa.
+            // so menjar.
             soundSource.clip = foodSound;
             soundSource.Play();
         }
         if (collider.tag == "ItemShop")
         {
-            // so recollir moneda falsa.
+            // so fer compra.
             soundSource.clip = itemShopSound;
             soundSource.Play();
 
         }
+        if (collider.tag == "Idol")
+        {
+            // so recollir ídol.
+            soundSource.clip = idolSound;
+            soundSource.Play();
+        }
 
+        if (collider.tag == "ExtraLife")
+        {
+            // so recollir vida extra.
+            soundSource.clip = idolSound;
+            soundSource.Play();
+        }
+
+        if (collider.tag == "ShieldArticleShop" || collider.tag == "BowArticleShop" || collider.tag == "PotionArticleShop")
+        {
+            // comprovem si tenim com a minim 25 monedes.
+            sumPositiveCoins = System.Int32.Parse(coinsText.text);
+            if (sumPositiveCoins >= 25)
+            {
+                if (collider.tag == "ShieldArticleShop")
+                {
+                    //sumPositiveCoins = sumPositiveCoins - 5;
+                    //coinsText.text = (sumPositiveCoins).ToString();
+                    //Destroy(gameObject);
+                    //activem l'arma arc.
+                    //anim.SetBool("ShieldAtack", true);
+                    shieldStatus.text = "Activat";
+                    soundSource.clip = itemShopSound;
+                    soundSource.Play();
+                }
+
+                if (collider.tag == "BowArticleShop")
+                {
+                    //sumPositiveCoins = sumPositiveCoins - 5;
+                    //coinsText.text = (sumPositiveCoins).ToString();
+                    //Destroy(gameObject);
+                    //activem l'arma arc.
+                    //anim.SetBool("ShieldAtack", true);
+                    shieldStatus.text = "Activat";
+                    soundSource.clip = itemShopSound;
+                    soundSource.Play();
+                }
+                if (collider.tag == "PotionArticleShop")
+                {
+                    //sumPositiveCoins = sumPositiveCoins - 5;
+                    //coinsText.text = (sumPositiveCoins).ToString();
+                    //Destroy(gameObject);
+                    //activem l'arma arc.
+                    //anim.SetBool("ShieldAtack", true);
+                    shieldStatus.text = "Activat";
+                    soundSource.clip = itemShopSound;
+                    soundSource.Play();
+                }
+            }
+            else
+            {
+                soundSource.clip = NoitemShopSound;
+                soundSource.Play();
+            }
+        }
+        else
+        {
+            // no tenim prou monedes per comprar 10 fletxes.
+            anim.SetBool("BowAtack", false);
+            anim.SetBool("ArrowsAmunition", false);
+        }
+
+
+        // recollim el idol i permetem el pas al seguent nivell.
+        if (collider.tag == "Idol")
+        {
+            nextlevel = true;
+            //sumPositiveCoins = sumPositiveCoins - 5;
+            //coinsText.text = (sumPositiveCoins).ToString();
+            //Destroy(gameObject);
+            //activem l'arma arc.
+            //anim.SetBool("NextLevel", true);
+            //shieldStatus.text = "Activat";
+        }
+        if (collider.tag == "ToIsland")
+        {
+
+            if (nextlevel == true)
+            {
+                // Tenim el idol, anem al següent nivell.
+                SceneManager.LoadScene("MainMenu");
+            }
+            else
+            {
+                // no hem trobat el idol, encara no podem passar de nivell.
+                soundSource.clip = negativeCoinSound;
+                soundSource.Play();
+            }
+        }
     }
-    
 }
 

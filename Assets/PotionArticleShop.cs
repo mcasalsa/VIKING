@@ -12,6 +12,7 @@ public class PotionArticleShop : MonoBehaviour
     public Text coinsText;
     private int sumPositiveCoins;
     public AudioClip itemShopSound;
+    public AudioClip NoitemShopSound;
     AudioSource soundSource;
     // Use this for initialization
     void Start()
@@ -33,7 +34,7 @@ public class PotionArticleShop : MonoBehaviour
 
         sumPositiveCoins = System.Int32.Parse(coinsText.text);
 
-        if (sumPositiveCoins >= 5)
+        if (sumPositiveCoins >= 25)
         {
             if (collider.tag == "Player")
             {
@@ -41,7 +42,7 @@ public class PotionArticleShop : MonoBehaviour
                 //Actualitzem el contador de monedes.
 
                 num = System.Int32.Parse(coinsText.text);
-                num = num - 5;
+                num = num - 25;
                 coinsText.text = (num).ToString();
 
                 //sumPositiveCoins = sumPositiveCoins - 6;
@@ -53,15 +54,8 @@ public class PotionArticleShop : MonoBehaviour
                 num = num +1;
                 potionsCount.text = (num).ToString();
                 Destroy(gameObject);
-                // so compra article.
-                soundSource.clip = itemShopSound;
-                soundSource.Play();
-            }
-            else
-            {
-                // no tenim prou monedes per comprar 10 fletxes.
+               
             }
         }
-
     }
 }
