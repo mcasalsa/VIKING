@@ -1,12 +1,12 @@
-Mono path[0] = 'D:/Projecte UOC/Desenvolupament/V154/Viking/Viking_Data/Managed'
-Mono path[1] = 'D:/Projecte UOC/Desenvolupament/V154/Viking/Viking_Data/Mono'
-Mono config path = 'D:/Projecte UOC/Desenvolupament/V154/Viking/Viking_Data/Mono/etc'
-PlayerConnection initialized from D:/Projecte UOC/Desenvolupament/V154/Viking/Viking_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55394
-Multi-casting "[IP] 192.168.16.62 [Port] 55394 [Flags] 2 [Guid] 9928356 [EditorId] 2986078998 [Version] 1048832 [Id] WindowsPlayer(MK) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55394]
-PlayerConnection already initialized - listening to [0.0.0.0:55394]
-Player data archive not found at `D:/Projecte UOC/Desenvolupament/V154/Viking/Viking_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.3p2 (b3d7a6428558)
+Mono path[0] = 'F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/Managed'
+Mono path[1] = 'F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/Mono'
+Mono config path = 'F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/Mono/etc'
+PlayerConnection initialized from F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55110
+Multi-casting "[IP] 192.168.16.62 [Port] 55110 [Flags] 2 [Guid] 3332293693 [EditorId] 637729624 [Version] 1048832 [Id] WindowsPlayer(MK) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55110]
+PlayerConnection already initialized - listening to [0.0.0.0:55110]
+Player data archive not found at `F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.3p2 (b3d7a6428558)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -15,22 +15,22 @@ Direct3D:
     VRAM:     848 MB
     Driver:   21.21.13.6909
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.191 seconds
-Platform assembly: D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Projecte UOC\Desenvolupament\V154\Viking\Viking_Data\Managed\System.dll (this message is harmless)
+Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.207 seconds
+Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 5.176413 ms
+UnloadTime: 1.661713 ms
 The referenced script on this Behaviour is missing!
  
 (Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1515)
@@ -40,7 +40,7 @@ The referenced script on this Behaviour (Game Object 'Fire') is missing!
 (Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1744)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 12.756294 ms
+UnloadTime: 5.619128 ms
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (81)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
@@ -161,14 +161,6 @@ Default clip could not be found in attached animations list.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (152)' must be marked as Legacy.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (143)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
@@ -196,10 +188,6 @@ Default clip could not be found in attached animations list.
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (131)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
 Default clip could not be found in attached animations list.
  
@@ -549,6 +537,14 @@ Default clip could not be found in attached animations list.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (153)' must be marked as Legacy.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
+
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (58)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
@@ -649,14 +645,6 @@ Default clip could not be found in attached animations list.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (151)' must be marked as Legacy.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
-
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (119)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
@@ -666,14 +654,6 @@ Default clip could not be found in attached animations list.
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (75)' must be marked as Legacy.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
-
-The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (153)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
 
@@ -714,6 +694,14 @@ Default clip could not be found in attached animations list.
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (116)' must be marked as Legacy.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
+
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (151)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
 
@@ -997,6 +985,14 @@ Default clip could not be found in attached animations list.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
+The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (152)' must be marked as Legacy.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
+
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (82)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
@@ -1077,22 +1073,14 @@ Default clip could not be found in attached animations list.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
-System memory in use before: 107.5 MB.
-System memory in use after: 101.7 MB.
+System memory in use before: 115.7 MB.
+System memory in use after: 109.8 MB.
 
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 13827.
-Total: 30.457148 ms (FindLiveObjects: 0.595735 ms CreateObjectMapping: 0.185671 ms MarkObjects: 15.797951 ms  DeleteObjects: 13.876390 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 28.070942 ms
-System memory in use before: 100.3 MB.
-System memory in use after: 26.4 MB.
-
-Unloading 261 unused Assets to reduce memory usage. Loaded Objects now: 508.
-Total: 9.735166 ms (FindLiveObjects: 0.034521 ms CreateObjectMapping: 0.034521 ms MarkObjects: 0.309763 ms  DeleteObjects: 9.354492 ms)
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 13671.
+Total: 4.525625 ms (FindLiveObjects: 0.791669 ms CreateObjectMapping: 0.187537 ms MarkObjects: 2.407664 ms  DeleteObjects: 1.135954 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 27b4 -> priority: 1 
-  Thread -> id: 510 -> priority: 1 
-  Thread -> id: 264c -> priority: 1 
-  Thread -> id: 3c78 -> priority: 1 
+  Thread -> id: 3100 -> priority: 1 
+  Thread -> id: 36e0 -> priority: 1 
+  Thread -> id: 3428 -> priority: 1 
+  Thread -> id: 2568 -> priority: 1 
