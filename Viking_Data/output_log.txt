@@ -1,12 +1,12 @@
-Mono path[0] = 'F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/Managed'
-Mono path[1] = 'F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/Mono'
-Mono config path = 'F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/Mono/etc'
-PlayerConnection initialized from F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55110
-Multi-casting "[IP] 192.168.16.62 [Port] 55110 [Flags] 2 [Guid] 3332293693 [EditorId] 637729624 [Version] 1048832 [Id] WindowsPlayer(MK) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55110]
-PlayerConnection already initialized - listening to [0.0.0.0:55110]
-Player data archive not found at `F:/UOC/TFN6/Desenvolupament/Projecte_VIKING/Viking_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.3p2 (b3d7a6428558)
+Mono path[0] = 'D:/Projecte UOC/Desenvolupament/Pac3/V176/Viking/Viking_Data/Managed'
+Mono path[1] = 'D:/Projecte UOC/Desenvolupament/Pac3/V176/Viking/Viking_Data/Mono'
+Mono config path = 'D:/Projecte UOC/Desenvolupament/Pac3/V176/Viking/Viking_Data/Mono/etc'
+PlayerConnection initialized from D:/Projecte UOC/Desenvolupament/Pac3/V176/Viking/Viking_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55412
+Multi-casting "[IP] 192.168.95.1 [Port] 55412 [Flags] 2 [Guid] 11907652 [EditorId] 4115658026 [Version] 1048832 [Id] WindowsPlayer(MK) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55412]
+PlayerConnection already initialized - listening to [0.0.0.0:55412]
+Player data archive not found at `D:/Projecte UOC/Desenvolupament/Pac3/V176/Viking/Viking_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.3p2 (b3d7a6428558)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -15,22 +15,22 @@ Direct3D:
     VRAM:     848 MB
     Driver:   21.21.13.6909
 Begin MonoManager ReloadAssembly
-Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.207 seconds
-Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: F:\UOC\TFN6\Desenvolupament\Projecte_VIKING\Viking_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.243 seconds
+Platform assembly: D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Projecte UOC\Desenvolupament\Pac3\V176\Viking\Viking_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.661713 ms
+UnloadTime: 4.681442 ms
 The referenced script on this Behaviour is missing!
  
 (Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1515)
@@ -40,7 +40,7 @@ The referenced script on this Behaviour (Game Object 'Fire') is missing!
 (Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1744)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.619128 ms
+UnloadTime: 4.045120 ms
 The AnimationClip 'PositiveCoin' used by the Animation component 'PositiveCoins (81)' must be marked as Legacy.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 2008)
@@ -1073,14 +1073,22 @@ Default clip could not be found in attached animations list.
  
 (Filename: C:/buildslave/unity/build/Runtime/Animation/Animation.cpp Line: 395)
 
-System memory in use before: 115.7 MB.
-System memory in use after: 109.8 MB.
+System memory in use before: 109.2 MB.
+System memory in use after: 102.6 MB.
 
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 13671.
-Total: 4.525625 ms (FindLiveObjects: 0.791669 ms CreateObjectMapping: 0.187537 ms MarkObjects: 2.407664 ms  DeleteObjects: 1.135954 ms)
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 13658.
+Total: 3.893038 ms (FindLiveObjects: 0.532756 ms CreateObjectMapping: 0.202932 ms MarkObjects: 2.020927 ms  DeleteObjects: 1.135022 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 47.216560 ms
+System memory in use before: 100.7 MB.
+System memory in use after: 27.3 MB.
+
+Unloading 223 unused Assets to reduce memory usage. Loaded Objects now: 543.
+Total: 9.157153 ms (FindLiveObjects: 0.034521 ms CreateObjectMapping: 0.033588 ms MarkObjects: 0.302299 ms  DeleteObjects: 8.785810 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 3100 -> priority: 1 
-  Thread -> id: 36e0 -> priority: 1 
-  Thread -> id: 3428 -> priority: 1 
-  Thread -> id: 2568 -> priority: 1 
+  Thread -> id: 2ee0 -> priority: 1 
+  Thread -> id: 2534 -> priority: 1 
+  Thread -> id: 2fe0 -> priority: 1 
+  Thread -> id: c40 -> priority: 1 
