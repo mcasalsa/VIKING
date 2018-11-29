@@ -9,17 +9,17 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour {
     Vector3 target;
     public float maxSpeed = 5f;
-	public float speed = 2f;
-	public bool grounded;
+    public float speed = 2f;
+    public bool grounded;
     //public bool swordAtack = false;
     public float jumpPower = 6.5f;
 
-	private Rigidbody2D rb2d;
-	private Animator anim;
-	private SpriteRenderer spr;
-	private bool jump;
-	private bool doubleJump;
-	private bool movement = true;
+    private Rigidbody2D rb2d;
+    private Animator anim;
+    private SpriteRenderer spr;
+    private bool jump;
+    private bool doubleJump;
+    private bool movement = true;
     private GameObject healthbar;
     public GameObject arrow;
     public float arrowRotation = 0;
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour {
     float hp, maxHp = 100f;
     public Image health;
     public Text potions;
-    public  bool nextlevel;
+    public bool nextlevel;
 
     // variables de so.
     public AudioClip jumpSound;
@@ -62,20 +62,17 @@ public class PlayerController : MonoBehaviour {
     public AudioClip NoitemShopSound;
     public AudioClip idolSound;
     public AudioClip extraLifeSound;
+    public GameObject shop;
 
-
-
-    // pausa.
-    public bool pauseGame;
 
     AudioSource soundSource;
-  
+
 
     // Use this for initialization
-    void Start () {
-		rb2d = GetComponent<Rigidbody2D>();
-		anim = GetComponent<Animator>();
-		spr = GetComponent<SpriteRenderer>();
+    void Start() {
+        rb2d = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        spr = GetComponent<SpriteRenderer>();
         arrow = GameObject.Find("Arrow"); ;
         healthbar = GameObject.Find("Healthbar");
         anim.SetBool("SwordAtack", false);
@@ -85,8 +82,8 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("NextLevel", false);
 
         //anim.SetBool("Level",1f);
-        shieldStatus.text = "Desactivat";
-        
+        //shieldStatus.text = "Desactivat";
+
         arrowRotation = 0;
         nextlevel = false;
 
@@ -106,10 +103,10 @@ public class PlayerController : MonoBehaviour {
         // si h > 0 parallax dreta si h< parallax cap a l'esquerra.
         h = h * 1.5f;
         float finalSpeed = parallaxSpeed * Time.deltaTime;
-                //background00.uvRect = new Rect(background00.uvRect.x + finalSpeed * (h*2), 1f, 1f, 1f);
-                // background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * 0.1f, 1f, 1f, 1f);
-                h = h * 1.5f;
-                background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * (h/8), 1f, 1f, 1f);
+        //background00.uvRect = new Rect(background00.uvRect.x + finalSpeed * (h*2), 1f, 1f, 1f);
+        // background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * 0.1f, 1f, 1f, 1f);
+        h = h * 1.5f;
+        background01.uvRect = new Rect(background01.uvRect.x + finalSpeed * (h / 8), 1f, 1f, 1f);
         //background02.uvRect = new Rect(background02.uvRect.x + finalSpeed * (h /4), 1f, 1f, 1f);
         //background03.uvRect = new Rect(background03.uvRect.x + finalSpeed * (h /8), 1f, 1f, 1f);
         //platform velocity = background velocity * 4;
@@ -128,14 +125,14 @@ public class PlayerController : MonoBehaviour {
 
         //prenem poció curativa
 
-       
+
 
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             // comprovem si tenim pocions.
             num = System.Int32.Parse(potions.text);
-           
-            if (num>0)
+
+            if (num > 0)
             {
                 // la posicó fa que la barra de vida estigui al máxim.
                 hp = maxHp;
@@ -174,7 +171,7 @@ public class PlayerController : MonoBehaviour {
                 // desdativem l'escut per atacar amb fletxes.
                 anim.SetBool("ShieldAtack", false);
                 anim.SetBool("BowAtack", true);
-                
+
 
                 // quaternion.eduler ens permet aplicar la rotació de la fletxa.
 
@@ -195,7 +192,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         // Escut.
-  
+
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (shieldStatus.text == "Activat")
@@ -204,10 +201,10 @@ public class PlayerController : MonoBehaviour {
                 anim.Play("Player_Shield");
             }
         }
-     
+
         // saltem.
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
-           
+            //shop.SetActive(false);
             if (grounded) {
                 jump = true;
                 doubleJump = true;
@@ -224,47 +221,48 @@ public class PlayerController : MonoBehaviour {
 
 
         //Debug.DrawLine(transform.position, target, Color.green);
-       
+
     }
 
-    void FixedUpdate(){
+    void FixedUpdate() {
 
         //anim.SetBool("SwordAtack", false);
 
         Vector3 fixedVelocity = rb2d.velocity;
-		fixedVelocity.x *= 0.75f;
+        fixedVelocity.x *= 0.75f;
 
-		if (grounded){
-			rb2d.velocity = fixedVelocity;
-		}
+        if (grounded) {
+            rb2d.velocity = fixedVelocity;
+        }
 
-		float h = Input.GetAxis("Horizontal");
+        float h = Input.GetAxis("Horizontal");
         if (!movement)
         {
             h = 0;
-
+            //shop.SetActive(false);
         }
 
-		rb2d.AddForce(Vector2.right * speed * h);
-        
-		float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
-		rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
+        rb2d.AddForce(Vector2.right * speed * h);
 
-		if (h > 0.1f) {
-			transform.localScale = new Vector3(1f, 1f, 1f);
+        float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
+        rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
+
+        if (h > 0.1f) {
+            transform.localScale = new Vector3(1f, 1f, 1f);
             Parallax(h);
-        } 
+            //shop.SetActive(false);
+        }
 
-		if (h < -0.1f){
-			transform.localScale = new Vector3(-1f, 1f, 1f);
+        if (h < -0.1f) {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
             Parallax(h);
         }
 
-		if (jump){
-			rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
-			rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-			jump = false;
-		}
+        if (jump) {
+            rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
+            rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+            jump = false;
+        }
 
         //Debug.Log(rb2d.velocity.x);
         // si apretem cap a la esquerra girem tambe el tir de fletxa.
@@ -278,39 +276,39 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-	void OnBecameInvisible(){
-		transform.position = new Vector3(-1,0,0);
-	}
+    void OnBecameInvisible() {
+        transform.position = new Vector3(-1, 0, 0);
+    }
 
-	public void EnemyJump(){
-		jump = true;
-	}
+    public void EnemyJump() {
+        jump = true;
+    }
 
     // Ens ha tocat un enemic.
-	public void EnemyKnockBack(float enemyPosX){
-		jump = true;
+    public void EnemyKnockBack(float enemyPosX) {
+        jump = true;
 
-		float side = Mathf.Sign(enemyPosX - transform.position.x);
-		rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
+        float side = Mathf.Sign(enemyPosX - transform.position.x);
+        rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
 
-		movement = false;
-		Invoke("EnableMovement", 0.7f);
+        movement = false;
+        Invoke("EnableMovement", 0.7f);
 
-		Color color = new Color(255/255f, 106/255f, 0/255f);
-		spr.color = color;
+        Color color = new Color(255 / 255f, 106 / 255f, 0 / 255f);
+        spr.color = color;
 
         // Restem vida enviant y¡un missage a la fució TakeDamage del scrot HealthBar.
-        healthbar.SendMessage("TakeDamage",15);
+        healthbar.SendMessage("TakeDamage", 15);
 
 
         soundSource.clip = damageSound;
         soundSource.Play();
     }
 
-	void EnableMovement(){
-		movement = true;
-		spr.color = Color.white;
-        
+    void EnableMovement() {
+        movement = true;
+        spr.color = Color.white;
+
         //Parallax();
     }
 
@@ -439,6 +437,16 @@ public class PlayerController : MonoBehaviour {
                 soundSource.Play();
             }
         }
+
+        
+
     }
+
+
+
+    
 }
+
+
+
 

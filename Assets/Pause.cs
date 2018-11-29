@@ -41,4 +41,16 @@ public class Pause : MonoBehaviour {
             Application.Quit();
         }
     }
+
+    public void Pausated()
+    {
+        pauseGame = !pauseGame;
+        //canvasPause.enabled = pauseGame;
+        // Time.timeScale regula la velocitat del joc, si es zero llavorsel joc està en pausa.
+        // operador ternari ?, si val 0 la pausa esta desactivada i posarem 1 per activar-la i a la inversa.
+        Time.timeScale = (pauseGame) ? 0f : 1f;
+    }
 }
+
+
+

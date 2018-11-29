@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viking.Plugins", "Viking.Plugins.csproj", "{3E61F830-544E-E11B-D73D-B29A235DA959}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viking", "Viking.csproj", "{324EA22C-AB29-CC0D-26F8-F02408ABBFD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viking.Editor", "Viking.Editor.csproj", "{530ADDED-6F36-74FF-F23D-4FCD90DDD547}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E61F830-544E-E11B-D73D-B29A235DA959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E61F830-544E-E11B-D73D-B29A235DA959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E61F830-544E-E11B-D73D-B29A235DA959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E61F830-544E-E11B-D73D-B29A235DA959}.Release|Any CPU.Build.0 = Release|Any CPU
 		{324EA22C-AB29-CC0D-26F8-F02408ABBFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{324EA22C-AB29-CC0D-26F8-F02408ABBFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{324EA22C-AB29-CC0D-26F8-F02408ABBFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
