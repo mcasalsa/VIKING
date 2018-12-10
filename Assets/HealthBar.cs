@@ -10,15 +10,18 @@ public class HealthBar : MonoBehaviour {
     public Image health;
     public Hearts lifeCanvas;
     public static int lifes;
-
+    public Animator anim;
+    public AudioClip deathSound;
+    AudioSource soundSource;
     // Use this for initialization
     void Start() {
         hp = maxHp;
         lifes = 3;
         lifeCanvas = GameObject.FindObjectOfType<Hearts>();
         lifeCanvas.ChangeLife(lifes);
-
-}
+        //anim = GetComponent<Animator>();
+        soundSource = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update() {
@@ -32,7 +35,14 @@ public class HealthBar : MonoBehaviour {
         {
             // vitalitat esgotada, restem una vida
             lifes = lifes - 1;
-            
+            //anim.SetBool("PlayerDead", false);
+            //anim.Play("Play_Idle");
+            soundSource.clip = deathSound;
+            soundSource.Play();
+            anim.Play("PlayerDead");
+
+            Time.timeScale = 1f;
+            //anim.SetBool("PlayerDead", false);
             if (lifes > 0)
             {
                 // s'ha perdut una vida peo encara ens en queden. Restaurem la vitalitat.
@@ -42,24 +52,29 @@ public class HealthBar : MonoBehaviour {
                 // actualitzem el marcador de vides.
                
                         lifeCanvas.ChangeLife(lifes);
-                   
-               
+                //anim.SetBool("PlayerDead", false);
+                //anim.Play("Play_Idle");
+
+
 
             }
             else
             {
                 // numero de vides esgotat. Game Over.
+               
                 lifeCanvas.ChangeLife(lifes);
-                SceneManager.LoadScene("GameOver");
+                SceneManager.LoadScene("GameOverV2");
                             }
         }
         else
         {
             hp = Mathf.Clamp(hp - amountDamage, 0f, maxHp);
+
         }
         health.transform.localScale = new Vector2(hp/maxHp, 1);
-        
-
+        //anim.SetBool("PlayerDead", false);
+        //anim.SetBool("PlayerDead", false);
+        //anim.SetBool("Grounded", true);
     }
 
 

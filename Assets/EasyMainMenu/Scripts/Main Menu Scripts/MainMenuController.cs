@@ -172,6 +172,13 @@ public class MainMenuController : MonoBehaviour
             Debug.Log("Please write a scene name in the 'newGameSceneName' field of the Main Menu Script and don't forget to " +
                 "add that scene in the Build Settings!");
     }
+
+    public void MainMenu()
+    {
+        
+            SceneManager.LoadScene("MainMenu");
+        
+    }
     #endregion
 
     #region Back Buttons

@@ -11,7 +11,7 @@ public class Idol : MonoBehaviour
     void Start()
     {
         //anim = GetComponent<Animator>();
-        //Idol.NextLevel=false;
+       //Idol.NextLevel=false;
         //IdolStatus = false;
     }
 

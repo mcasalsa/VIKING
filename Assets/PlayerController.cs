@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour {
     private bool movement = true;
     private GameObject healthbar;
     public GameObject arrow;
+    public GameObject stopToIsland;
+    public GameObject stopToEngland;
+    public GameObject stopToFinland;
     public float arrowRotation = 0;
     public Text shieldStatus;
     public Text swordStatus;
@@ -45,7 +48,9 @@ public class PlayerController : MonoBehaviour {
 
     // variables per les pocions de vida.
     float hp, maxHp = 100f;
+    public static int lifes;
     public Image health;
+    //public Hearts lifeCanvas;
     public Text potions;
     public bool nextlevel;
 
@@ -62,6 +67,7 @@ public class PlayerController : MonoBehaviour {
     public AudioClip NoitemShopSound;
     public AudioClip idolSound;
     public AudioClip extraLifeSound;
+    public AudioClip sellerSound;
     public GameObject shop;
 
 
@@ -75,12 +81,13 @@ public class PlayerController : MonoBehaviour {
         spr = GetComponent<SpriteRenderer>();
         arrow = GameObject.Find("Arrow"); ;
         healthbar = GameObject.Find("Healthbar");
+        //stopToIsland = GameObject.Find("StoperToIsland");
         anim.SetBool("SwordAtack", false);
         anim.SetBool("BowAtack", false);
         anim.SetBool("ArrowsAmunition", false);
         anim.SetBool("ShieldAtack", false);
         anim.SetBool("NextLevel", false);
-
+        //anim.SetBool("PlayerDead", false);
         //anim.SetBool("Level",1f);
         //shieldStatus.text = "Desactivat";
 
@@ -93,7 +100,10 @@ public class PlayerController : MonoBehaviour {
         // inicialment guardarem record 0 al PlayerPrefs
         //currentPoints = 0;
         //recordText.text = GetMaxScore().ToString();
-
+        hp = maxHp;
+        
+        //lifeCanvas = GameObject.FindObjectOfType<Hearts>();
+        //lifeCanvas.ChangeLife(lifes);
     }
 
     void Parallax(float h)
@@ -156,6 +166,7 @@ public class PlayerController : MonoBehaviour {
             //swordAtack = false;
             soundSource.clip = swordSound;
             soundSource.Play();
+            
         }
 
 
@@ -345,9 +356,12 @@ public class PlayerController : MonoBehaviour {
         if (collider.tag == "Idol")
         {
             // so recollir ídol.
+            nextlevel = true;
             soundSource.clip = idolSound;
             soundSource.Play();
         }
+
+       
 
         if (collider.tag == "ExtraLife")
         {
@@ -412,37 +426,77 @@ public class PlayerController : MonoBehaviour {
 
 
         // recollim el idol i permetem el pas al seguent nivell.
-        if (collider.tag == "Idol")
-        {
-            nextlevel = true;
-            //sumPositiveCoins = sumPositiveCoins - 5;
-            //coinsText.text = (sumPositiveCoins).ToString();
-            //Destroy(gameObject);
-            //activem l'arma arc.
-            //anim.SetBool("NextLevel", true);
-            //shieldStatus.text = "Activat";
-        }
+       
+
         if (collider.tag == "ToIsland")
         {
-
+            soundSource.clip = itemShopSound;
+            soundSource.Play();
+            // Tenim el idol, anem al següent nivell.
             if (nextlevel == true)
             {
-                // Tenim el idol, anem al següent nivell.
-                SceneManager.LoadScene("MainMenu");
+                // Tenim el idol, anem al següent fase.
+                soundSource.clip = itemShopSound;
+                soundSource.Play();
+                Destroy(stopToIsland);
+                nextlevel = false;
             }
             else
             {
                 // no hem trobat el idol, encara no podem passar de nivell.
                 soundSource.clip = negativeCoinSound;
                 soundSource.Play();
+                //Destroy(stopToIsland);
             }
         }
 
-        
+        if (collider.tag == "ToEngland")
+        {
+            soundSource.clip = itemShopSound;
+            soundSource.Play();
+            // Tenim el idol, anem al següent nivell.
+            if (nextlevel == true)
+            {
+                // Tenim el idol, anem al següent fase.
+                soundSource.clip = itemShopSound;
+                soundSource.Play();
+                Destroy(stopToEngland);
+                nextlevel = false;
+            }
+            else
+            {
+                // no hem trobat el idol, encara no podem passar de nivell.
+                soundSource.clip = negativeCoinSound;
+                soundSource.Play();
+                //Destroy(stopToIsland);
+            }
+        }
+
+        if (collider.tag == "ToFinland")
+        {
+            soundSource.clip = itemShopSound;
+            soundSource.Play();
+            // Tenim el idol, anem al següent nivell.
+            if (nextlevel == true)
+            {
+                // Tenim el idol, anem al següent fase.
+                soundSource.clip = itemShopSound;
+                soundSource.Play();
+                Destroy(stopToFinland);
+                //nextlevel = false;
+            }
+            else
+            {
+                // no hem trobat el idol, encara no podem passar de nivell.
+                soundSource.clip = negativeCoinSound;
+                soundSource.Play();
+                //Destroy(stopToIsland);
+            }
+        }
 
     }
 
-
+    
 
     
 }

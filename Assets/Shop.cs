@@ -20,6 +20,8 @@ public class Shop : MonoBehaviour
     private GameObject pausated;
 
     public bool pauseGame;
+    public AudioClip clickSound;
+    // public AudioClip ambientSound;
 
     AudioSource soundSource;
 
@@ -108,7 +110,7 @@ public class Shop : MonoBehaviour
         {
             sumPositiveCoins = sumPositiveCoins - 25;
             coinsText.text = (sumPositiveCoins).ToString();
-            //shieldStatus.text = "Activat";
+            shieldStatus.text = "Activat";
             anim.SetBool("ShieldAtack", true);
 
         }
@@ -129,5 +131,20 @@ public class Shop : MonoBehaviour
         // operador ternari ?, si val 0 la pausa esta desactivada i posarem 1 per activar-la i a la inversa.
         Time.timeScale = (pauseGame) ? 0f : 1f;
     }
-}
 
+    void playClickSound()
+    {
+        //AudioClip clipToPlay = menuTheme;
+        //clipToPlay = menuTheme;
+        soundSource = GetComponent<AudioSource>();
+        soundSource.clip = clickSound;
+        soundSource.Play();
+        // AudioClip clipToPlay;
+
+
+        //clipToPlay = "menuTheme";
+        //AudioManager.instance.PlayMusic(clickSound, 1);
+
+
+   }
+}

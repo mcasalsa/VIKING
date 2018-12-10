@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class RecordOption : MonoBehaviour
 {
     public Text rText;
-
+    public Text sText;
 
     // Use this for initialization
     void Start()
@@ -18,19 +18,25 @@ public class RecordOption : MonoBehaviour
 
         //rText.text = GetMaxRecord().ToString();
         rText.text = GetMaxRecord().ToString();
-
+        sText.text = GetCurScore().ToString();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        
     }
 
     // funcions de record de puntuació.
     public int GetMaxRecord()
     {
         return PlayerPrefs.GetInt("Max Points",0);
+    }
+
+    public int GetCurScore()
+    {
+        return PlayerPrefs.GetInt("Cur Points", 0);
     }
 
     //public void SaveScore()

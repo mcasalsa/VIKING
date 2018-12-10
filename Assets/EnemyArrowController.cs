@@ -6,41 +6,57 @@ using UnityEngine.UI;
 public class EnemyArrowController : MonoBehaviour
 {
 
-    public float maxSpeed = 1f;
-    public float speed = 1f;
+    // Variables para gestionar el radio de visión y velocidad
+    public float visionRadius = 5;
+    public float speed;
 
-    private Rigidbody2D rb2d;
+    // Variable para guardar al jugador
+    public GameObject player;
+
+    // Variable para guardar la posición inicial
+    Vector3 initialPosition;
     private int points = 0;
     public Text pointsText;
 
-    // Use this for initialization
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+
+        // Recuperamos al jugador gracias al Tag
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        // Guardamos nuestra posición inicial
+        initialPosition = transform.position;
+
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        //rb2d.AddForce(Vector2.right * speed);
-        //float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
-       // rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
 
-      //  if (rb2d.velocity.x > -0.01f && rb2d.velocity.x < 0.01f)
-       // {
-        //    speed = -speed;
-       //     rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
-       // }
+        // Por defecto nuestro objetivo siempre será nuestra posición inicial
+        Vector3 target = initialPosition;
 
-       // if (speed < 0)
-      //  {
-       //     transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-    // else if (speed > 0)
-    // {
-    //     transform.localScale = new Vector3(-1f, 1f, 1f);
-    //  }
-    // }
+        // Pero si la distancia hasta el jugador es menor que el radio de visión el objetivo será él
+        float dist = Vector3.Distance(player.transform.position, transform.position);
+        if (dist < visionRadius) target = player.transform.position;
+
+        // Finalmente movemos al enemigo en dirección a su target
+        float fixedSpeed = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
+
+        // Y podemos debugearlo con una línea
+        Debug.DrawLine(transform.position, target, Color.green);
+
+    }
+
+    // Podemos dibujar el radio de visión sobre la escena dibujando una esfera
+    void OnDrawGizmos()
+    {
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, visionRadius);
+
+    }
+
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -52,13 +68,65 @@ public class EnemyArrowController : MonoBehaviour
                 col.SendMessage("EnemyJump");
                 Destroy(gameObject);
 
+                // Enemic abatut.
+                IncreasePoints(50);
             }
             else
             {
                 col.SendMessage("EnemyKnockBack", transform.position.x);
-                // Destroy(gameObject);
+                Destroy(gameObject);
+            }
+        }
+
+        if (col.gameObject.tag == "Shield")
+        {
+            float yOffset = 0.4f;
+            if (transform.position.y + yOffset < col.transform.position.y)
+            {
+                //col.SendMessage("EnemyJump");
+                Destroy(gameObject);
+
+                // Enemic abatut.
+                //IncreasePoints(50);
+            }
+            else
+            {
+                //col.SendMessage("EnemyKnockBack", transform.position.x);
+                Destroy(gameObject);
+                //IncreasePoints(50);
+            }
+        }
+
+        if (col.gameObject.tag == "Sword")
+        {
+            float yOffset = 0.4f;
+            if (transform.position.y + yOffset < col.transform.position.y)
+            {
+                //col.SendMessage("EnemyJump");
+                //Destroy(gameObject);
+
+                // Enemic abatut.
+                //IncreasePoints(50);
+            }
+            else
+            {
+                //col.SendMessage("EnemyKnockBack", transform.position.x);
+                //Destroy(gameObject);
+                //IncreasePoints(50);
             }
         }
     }
-        
+
+    public void IncreasePoints(int incrementPoints)
+    {
+        //points = points + incrementPoints;
+        //pointsText.text = points.ToString();
+
+
+        points = System.Int32.Parse(pointsText.text);
+        pointsText.text = (points + incrementPoints).ToString();
+    }
 }
+
+
+

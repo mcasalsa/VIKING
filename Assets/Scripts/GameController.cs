@@ -32,11 +32,13 @@ public class GameController : MonoBehaviour {
 	void Update () {
         //Parallax();
         currentPointsNum = System.Int32.Parse(currentPointsText.text);
+        PlayerPrefs.SetInt("Cur Points", currentPointsNum);
         if (currentPointsNum >= GetMaxScore())
         {
             // hem fet record i el desem.
             PlayerPrefs.SetInt("Max Points", currentPointsNum);
-             // so.
+            
+            // so.
 
             //soundSource.clip = recordSound;
             //soundSource.Play();
@@ -64,6 +66,10 @@ public class GameController : MonoBehaviour {
     public int GetMaxScore()
     {
         return PlayerPrefs.GetInt("Max Points", 0);
+    }
+    public int GetCurScore()
+    {
+        return PlayerPrefs.GetInt("Cur Points", 0);
     }
 
     //public void SaveScore()
