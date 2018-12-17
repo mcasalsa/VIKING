@@ -1,0 +1,1828 @@
+fileFormatVersion: 2
+guid: ad99adfc15fbf0f4c820e1d0af21dbcb
+timeCreated: 1544915086
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CharacterAxeAtack_0
+    21300002: CharacterAxeAtack_1
+    21300004: CharacterAxeAtack_2
+    21300006: CharacterAxeAtack_3
+    21300008: CharacterAxeAtack_4
+    21300010: CharacterAxeAtack_5
+    21300012: CharacterAxeAtack_6
+    21300014: CharacterAxeAtack_7
+    21300016: CharacterAxeAtack_8
+    21300018: CharacterAxeAtack_9
+    21300020: CharacterAxeAtack_10
+    21300022: CharacterAxeAtack_11
+    21300024: CharacterAxeAtack_12
+    21300026: CharacterAxeAtack_13
+    21300028: CharacterAxeAtack_14
+    21300030: CharacterAxeAtack_15
+    21300032: CharacterAxeAtack_16
+    21300034: CharacterAxeAtack_17
+    21300036: CharacterAxeAtack_18
+    21300038: CharacterAxeAtack_19
+    21300040: CharacterAxeAtack_20
+    21300042: CharacterAxeAtack_21
+    21300044: CharacterAxeAtack_22
+    21300046: CharacterAxeAtack_23
+    21300048: CharacterAxeAtack_24
+    21300050: CharacterAxeAtack_25
+    21300052: CharacterAxeAtack_26
+    21300054: CharacterAxeAtack_27
+    21300056: CharacterAxeAtack_28
+    21300058: CharacterAxeAtack_29
+    21300060: CharacterAxeAtack_30
+    21300062: CharacterAxeAtack_31
+    21300064: CharacterAxeAtack_32
+    21300066: CharacterAxeAtack_33
+    21300068: CharacterAxeAtack_34
+    21300070: CharacterAxeAtack_35
+    21300072: CharacterAxeAtack_36
+    21300074: CharacterAxeAtack_37
+    21300076: CharacterAxeAtack_38
+    21300078: CharacterAxeAtack_39
+    21300080: CharacterAxeAtack_40
+    21300082: CharacterAxeAtack_41
+    21300084: CharacterAxeAtack_42
+    21300086: CharacterAxeAtack_43
+    21300088: CharacterAxeAtack_44
+    21300090: CharacterAxeAtack_45
+    21300092: CharacterAxeAtack_46
+    21300094: CharacterAxeAtack_47
+    21300096: CharacterAxeAtack_48
+    21300098: CharacterAxeAtack_49
+    21300100: CharacterAxeAtack_50
+    21300102: CharacterAxeAtack_51
+    21300104: CharacterAxeAtack_52
+    21300106: CharacterAxeAtack_53
+    21300108: CharacterAxeAtack_54
+    21300110: CharacterAxeAtack_55
+    21300112: CharacterAxeAtack_56
+    21300114: CharacterAxeAtack_57
+    21300116: CharacterAxeAtack_58
+    21300118: CharacterAxeAtack_59
+    21300120: CharacterAxeAtack_60
+    21300122: CharacterAxeAtack_61
+    21300124: CharacterAxeAtack_62
+    21300126: CharacterAxeAtack_63
+    21300128: CharacterAxeAtack_64
+    21300130: CharacterAxeAtack_65
+    21300132: CharacterAxeAtack_66
+    21300134: CharacterAxeAtack_67
+    21300136: CharacterAxeAtack_68
+    21300138: CharacterAxeAtack_69
+    21300140: CharacterAxeAtack_70
+    21300142: CharacterAxeAtack_71
+    21300144: CharacterAxeAtack_72
+    21300146: CharacterAxeAtack_73
+    21300148: CharacterAxeAtack_74
+    21300150: CharacterAxeAtack_75
+    21300152: CharacterAxeAtack_76
+    21300154: CharacterAxeAtack_77
+    21300156: CharacterAxeAtack_78
+    21300158: CharacterAxeAtack_79
+    21300160: CharacterAxeAtack_80
+    21300162: CharacterAxeAtack_81
+    21300164: CharacterAxeAtack_82
+    21300166: CharacterAxeAtack_83
+    21300168: CharacterAxeAtack_84
+    21300170: CharacterAxeAtack_85
+    21300172: CharacterAxeAtack_86
+    21300174: CharacterAxeAtack_87
+    21300176: CharacterAxeAtack_88
+    21300178: CharacterAxeAtack_89
+    21300180: CharacterAxeAtack_90
+    21300182: CharacterAxeAtack_91
+    21300184: CharacterAxeAtack_92
+    21300186: CharacterAxeAtack_93
+    21300188: CharacterAxeAtack_94
+    21300190: CharacterAxeAtack_95
+    21300192: CharacterAxeAtack_96
+    21300194: CharacterAxeAtack_97
+    21300196: CharacterAxeAtack_98
+    21300198: CharacterAxeAtack_99
+    21300200: CharacterAxeAtack_100
+    21300202: CharacterAxeAtack_101
+    21300204: CharacterAxeAtack_102
+    21300206: CharacterAxeAtack_103
+    21300208: CharacterAxeAtack_104
+    21300210: CharacterAxeAtack_105
+    21300212: CharacterAxeAtack_106
+    21300214: CharacterAxeAtack_107
+    21300216: CharacterAxeAtack_108
+    21300218: CharacterAxeAtack_109
+    21300220: CharacterAxeAtack_110
+    21300222: CharacterAxeAtack_111
+    21300224: CharacterAxeAtack_112
+    21300226: CharacterAxeAtack_113
+    21300228: CharacterAxeAtack_114
+    21300230: CharacterAxeAtack_115
+    21300232: CharacterAxeAtack_116
+    21300234: CharacterAxeAtack_117
+    21300236: CharacterAxeAtack_118
+    21300238: CharacterAxeAtack_119
+    21300240: CharacterAxeAtack_120
+    21300242: CharacterAxeAtack_121
+    21300244: CharacterAxeAtack_122
+    21300246: CharacterAxeAtack_123
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 26
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CharacterAxeAtack_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 597
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 597
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 597
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 597
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 597
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 597
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_6
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 597
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 597
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 559
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 559
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 559
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 559
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_12
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 559
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 559
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_14
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 559
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_15
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 559
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 520
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 520
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 520
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_19
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 520
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_20
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 520
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_21
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 520
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_22
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 520
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_23
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 520
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 483
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_25
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 483
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 483
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_27
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 483
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_28
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 483
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 483
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_30
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 483
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 444
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_32
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 444
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_33
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_34
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 458
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_35
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_36
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 443
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 407
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_38
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 407
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_39
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 407
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_40
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 407
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_41
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 408
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_42
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 408
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_43
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 408
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_44
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 408
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_45
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 408
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_46
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 370
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_47
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 370
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_48
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 370
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_49
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 370
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_50
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 370
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_51
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 371
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_52
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 372
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_53
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 392
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_54
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 373
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_55
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 379
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_56
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 376
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 333
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_58
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 333
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_59
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 333
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_60
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 333
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_61
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 352
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_62
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 353
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_63
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 333
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_64
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 333
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_65
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 299
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_66
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 316
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_67
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 299
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_68
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 314
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_69
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 314
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_70
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 316
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_71
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 309
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_72
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 299
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_73
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 311
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 314
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_75
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 307
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_76
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 304
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_77
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 299
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_78
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 311
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_79
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 333
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_80
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 299
+        width: 29
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_81
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 301
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_82
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 299
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_83
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 298
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_84
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 301
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_85
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 298
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_86
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 298
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_87
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 260
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_88
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 260
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_89
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 260
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_90
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 275
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_91
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 265
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_92
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 260
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_93
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 260
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_94
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 260
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_95
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 260
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 222
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_97
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 222
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_98
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 187
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_99
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 222
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_100
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 223
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_101
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 223
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_102
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 221
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_103
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 185
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_104
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 181
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_105
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 183
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_106
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 182
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_107
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 183
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_108
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 183
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_109
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 183
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_110
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 144
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_111
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 144
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_112
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 144
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_113
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 144
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_114
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 144
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_115
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 144
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_116
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 156
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_117
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 150
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_118
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 157
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_119
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 144
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_120
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 148
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_121
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 85
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_122
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 85
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CharacterAxeAtack_123
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 85
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

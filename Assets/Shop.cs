@@ -8,6 +8,8 @@ public class Shop : MonoBehaviour
 {
     public GameObject shop;
     public Text QuiverArrowText;
+    public Text QuiverFireText;
+    public Text AxeStatus;
     private float num;
     public Text coinsText;
     private int sumPositiveCoins;
@@ -51,7 +53,11 @@ public class Shop : MonoBehaviour
 
         shop.SetActive(true);
 
-        Invoke("Pausated", 0.1f);
+        //Invoke("Pausated", 0.1f);
+        shop.SetActive(true);
+        pauseGame = true;
+
+        Time.timeScale = (pauseGame) ? 0f : 1f;
     }
 
     // compra de fletxes.
@@ -65,7 +71,31 @@ public class Shop : MonoBehaviour
             QuiverArrowText.text = (num).ToString();
 
             // hem comprat 10 fletxes restem 10 monedes.
-            sumPositiveCoins = sumPositiveCoins - 25;
+            sumPositiveCoins = sumPositiveCoins - 26;
+            if (sumPositiveCoins < 0)
+            {
+                sumPositiveCoins = 0;
+            }
+            coinsText.text = (++sumPositiveCoins).ToString();
+
+        }
+    }
+
+    public void FireArticle()
+    {
+        sumPositiveCoins = System.Int32.Parse(coinsText.text);
+        if (sumPositiveCoins >= 25)
+        {
+            num = System.Int32.Parse(QuiverFireText.text);
+            num = num + 10;
+            QuiverFireText.text = (num).ToString();
+
+            // hem comprat 10 fletxes restem 10 monedes.
+            sumPositiveCoins = sumPositiveCoins - 26;
+            if (sumPositiveCoins < 0)
+            {
+                sumPositiveCoins = 0;
+            }
             coinsText.text = (++sumPositiveCoins).ToString();
 
         }
@@ -83,7 +113,11 @@ public class Shop : MonoBehaviour
             //Actualitzem el contador de posions i monendes.
 
             num = System.Int32.Parse(coinsText.text);
-            num = num - 15;
+            num = num - 16;
+            if (num < 0)
+            {
+                num = 0;
+            }
             coinsText.text = (num).ToString();
 
             num = System.Int32.Parse(potionsCount.text);
@@ -106,12 +140,36 @@ public class Shop : MonoBehaviour
     {
         sumPositiveCoins = System.Int32.Parse(coinsText.text);
 
+        if (sumPositiveCoins >= 2)
+        {
+            sumPositiveCoins = sumPositiveCoins - 25;
+            if (sumPositiveCoins < 0)
+            {
+                sumPositiveCoins = 0;
+            }
+                coinsText.text = (sumPositiveCoins).ToString();
+            shieldStatus.text = "Activat";
+            //anim.SetBool("ShieldAtack", true);
+
+        }
+    }
+
+    // compra de escut.
+    public void AxeArticle()
+    {
+        sumPositiveCoins = System.Int32.Parse(coinsText.text);
+
         if (sumPositiveCoins >= 25)
         {
             sumPositiveCoins = sumPositiveCoins - 25;
+            if (sumPositiveCoins < 0)
+            {
+                sumPositiveCoins = 0;
+            }
             coinsText.text = (sumPositiveCoins).ToString();
-            shieldStatus.text = "Activat";
-            anim.SetBool("ShieldAtack", true);
+
+            
+            AxeStatus.text = "Activat";
 
         }
     }
@@ -119,17 +177,21 @@ public class Shop : MonoBehaviour
     public void ExitShop()
     {
         shop.SetActive(false);
-        //pauseGame = true;
-        Time.timeScale = (false) ? 0f : 1f;
+        pauseGame = false;
+        
+        Time.timeScale = (pauseGame) ? 0f : 1f;
+        
     }
 
     public void Pausated()
     {
         pauseGame = !pauseGame;
+        pauseGame = true; ;
         //canvasPause.enabled = pauseGame;
         // Time.timeScale regula la velocitat del joc, si es zero llavorsel joc està en pausa.
         // operador ternari ?, si val 0 la pausa esta desactivada i posarem 1 per activar-la i a la inversa.
         Time.timeScale = (pauseGame) ? 0f : 1f;
+        Time.timeScale=0f;
     }
 
     void playClickSound()

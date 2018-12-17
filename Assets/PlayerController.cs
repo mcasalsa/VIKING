@@ -22,15 +22,20 @@ public class PlayerController : MonoBehaviour {
     private bool movement = true;
     private GameObject healthbar;
     public GameObject arrow;
+    public GameObject fireShot;
     public GameObject stopToIsland;
     public GameObject stopToEngland;
     public GameObject stopToFinland;
+    public GameObject stopToHome;
     public float arrowRotation = 0;
+    public float fireRotation = 0;
     public Text shieldStatus;
     public Text swordStatus;
+    public Text AxeStatus;
     public Text arrowsCounterText;
     private float arrowsCounterNum;
-
+    public Text fireCounterText;
+    private float fireCounterNum;
 
 
 
@@ -53,11 +58,13 @@ public class PlayerController : MonoBehaviour {
     //public Hearts lifeCanvas;
     public Text potions;
     public bool nextlevel;
+    public Text levelText;
 
     // variables de so.
     public AudioClip jumpSound;
     public AudioClip damageSound;
     public AudioClip swordSound;
+    public AudioClip fireBall;
     public AudioClip coinSound;
     public AudioClip potionSound;
     public AudioClip negativeCoinSound;
@@ -68,7 +75,9 @@ public class PlayerController : MonoBehaviour {
     public AudioClip idolSound;
     public AudioClip extraLifeSound;
     public AudioClip sellerSound;
+    public AudioClip stoperSound;
     public GameObject shop;
+
 
 
     AudioSource soundSource;
@@ -84,12 +93,15 @@ public class PlayerController : MonoBehaviour {
         //stopToIsland = GameObject.Find("StoperToIsland");
         anim.SetBool("SwordAtack", false);
         anim.SetBool("BowAtack", false);
+        anim.SetBool("AxeAtack", false);
         anim.SetBool("ArrowsAmunition", false);
         anim.SetBool("ShieldAtack", false);
         anim.SetBool("NextLevel", false);
         //anim.SetBool("PlayerDead", false);
         //anim.SetBool("Level",1f);
-        //shieldStatus.text = "Desactivat";
+        shieldStatus.text = "Desactivat";
+        levelText.text = "1 Amèrica";
+
 
         arrowRotation = 0;
         nextlevel = false;
@@ -129,7 +141,9 @@ public class PlayerController : MonoBehaviour {
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
         anim.SetBool("Grounded", grounded);
         anim.SetBool("SwordAtack", false);
+        //anim.SetBool("AxeAtack", false);
         anim.SetBool("BowAtack", false);
+        anim.SetBool("AxeAtack", false);
         //anim.SetBool("Shield", false);
         //anim.SetBool("ShieldAtack", false);
 
@@ -169,7 +183,7 @@ public class PlayerController : MonoBehaviour {
             
         }
 
-
+       
         // atac amb fletxa.
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
@@ -208,10 +222,66 @@ public class PlayerController : MonoBehaviour {
         {
             if (shieldStatus.text == "Activat")
             {
-                anim.SetBool("ShieldAtack", false);
+                anim.SetBool("ShieldAtack", true);
                 anim.Play("Player_Shield");
+                anim.Play("Player_Shield");
+                anim.Play("Player_Shield");
+                anim.SetBool("ShieldAtack", false);
             }
         }
+
+        // atac amb foc.
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+
+            // comprovem si teneim foc.
+            fireCounterNum = System.Int32.Parse(fireCounterText.text);
+            //comprovar si tenim fletxes
+            if (fireCounterNum > 0)
+            {
+                // desdativem l'escut per atacar amb fletxes.
+                anim.SetBool("ShieldAtack", false);
+                anim.SetBool("PlayerIdle", true);
+
+
+                // quaternion.eduler ens permet aplicar la rotació del foc.
+
+                //Instantiate(fireShot, transform.position, Quaternion.Euler(0, 0, arrowRotation));
+                Instantiate(fireShot, transform.position, Quaternion.Euler(0, 0, arrowRotation));
+                // restem un foc.
+                fireCounterNum = System.Int32.Parse(fireCounterText.text);
+                fireCounterText.text = (--fireCounterNum).ToString();
+                soundSource.clip = fireBall;
+                soundSource.Play();
+
+            }
+            else
+            {
+                // no tenim fletxes.
+                anim.SetBool("BowAtack", false);
+            }
+        }
+
+        //atack amb destral.
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+
+            if (AxeStatus.text == "Activat")
+            {
+                anim.SetBool("AxeAtack", true);
+
+
+                soundSource.clip = swordSound;
+                soundSource.Play();
+            }  
+
+
+        }
+        
+
+        
+
+       
 
         // saltem.
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
@@ -229,7 +299,7 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-
+     
 
         //Debug.DrawLine(transform.position, target, Color.green);
 
@@ -430,7 +500,7 @@ public class PlayerController : MonoBehaviour {
 
         if (collider.tag == "ToIsland")
         {
-            soundSource.clip = itemShopSound;
+            soundSource.clip = stoperSound;
             soundSource.Play();
             // Tenim el idol, anem al següent nivell.
             if (nextlevel == true)
@@ -439,6 +509,7 @@ public class PlayerController : MonoBehaviour {
                 soundSource.clip = itemShopSound;
                 soundSource.Play();
                 Destroy(stopToIsland);
+                levelText.text="2 Islàndia";
                 nextlevel = false;
             }
             else
@@ -458,10 +529,11 @@ public class PlayerController : MonoBehaviour {
             if (nextlevel == true)
             {
                 // Tenim el idol, anem al següent fase.
-                soundSource.clip = itemShopSound;
+                soundSource.clip = stoperSound;
                 soundSource.Play();
                 Destroy(stopToEngland);
                 nextlevel = false;
+                levelText.text = "3 Anglaterra";
             }
             else
             {
@@ -480,10 +552,11 @@ public class PlayerController : MonoBehaviour {
             if (nextlevel == true)
             {
                 // Tenim el idol, anem al següent fase.
-                soundSource.clip = itemShopSound;
+                soundSource.clip = stoperSound;
                 soundSource.Play();
                 Destroy(stopToFinland);
-                //nextlevel = false;
+                nextlevel = false;
+                levelText.text = "4 Finlandia";
             }
             else
             {
@@ -492,6 +565,33 @@ public class PlayerController : MonoBehaviour {
                 soundSource.Play();
                 //Destroy(stopToIsland);
             }
+        }
+
+        if (collider.tag == "ToHome")
+        {
+            levelText.text = "5 Casa";
+            soundSource.clip = stoperSound;
+            soundSource.Play();
+            // Tenim el idol, anem al següent nivell.
+            //if (nextlevel == true)
+           // {
+                // Tenim el idol, anem al següent fase.
+                soundSource.clip = stoperSound;
+                soundSource.Play();
+                Destroy(stopToHome);
+            //nextlevel = false;
+            //SceneManager.UnloadSceneAsync("MainMenu");
+            SceneManager.UnloadScene("Game");
+            
+                SceneManager.LoadScene("HappyEnding");
+           // }
+           // else
+            //{
+                // no hem trobat el idol, encara no podem passar de nivell.
+            //    soundSource.clip = negativeCoinSound;
+            //    soundSource.Play();
+                //Destroy(stopToIsland);
+           // }
         }
 
     }

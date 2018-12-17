@@ -32,6 +32,9 @@ public class ArrowController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        if (col.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
 }
