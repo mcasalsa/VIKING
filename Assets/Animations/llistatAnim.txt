@@ -1,0 +1,118 @@
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Acid.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Acid_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Arrow (3) 1.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Arrow (3) 2.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Arrow (3).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Arrow (4).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Arrow2Atack.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowAtack.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowTramp.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowTrampLeft.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowTrampRight.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowV2 (13).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowV2 (15).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowV2 (5).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowV2.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ArrowV3.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\BackgroundImage (1).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\BearV3_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\CharacterV2_10.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarDie.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarDie.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarHappy.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarIdleMenu.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarMenu.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarMenuIdle_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarWalk (1).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EinarWalkAlone.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemiBat.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Enemy (20).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Enemy.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyArrowRight.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyBat.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyBatFire.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyBear.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyFireBall.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyFireBall.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyFireBall2.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyFireBall3.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyFireBat.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyFireFalling.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyIceDemond (5).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyIceDemond.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyIceDemond.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyLava.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyLava.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyLavaFire.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyMiniFire.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyMiniFire.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyMiniFire2.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyMiniFireV2.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyMiniFirev3.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyMiniFireV5.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyPlant.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyPlant.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyPlantMenu.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\EnemyPlant_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Enemy_Walk.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ExtraLife.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ExtraLife.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\ExtraLifeV2n.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Fase-1-America.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\FaseAmercaTitle.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Fire Falling (22).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Fire.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\FireBall_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Food (3).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Food (6).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\FrameRecord.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\FrameRecord.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Frame__0000_Fondo-copia-3.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Fruit.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Idol.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Idol.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Image.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\InstructionsText.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\InstructionsTextBlink.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\IntroFramework.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\LavaFire_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\LavaFire_1.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\LavaFire_2.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Lava_0000_Capa-9.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Lava_0001_Capa-8.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\llistatAnim.txt
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\MainMenu.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\MiiFire_0 (1).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\MiiFire_0 (3).controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\MiiFire_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\MiiFire_1.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\MiiFire_27.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Air.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Bow_Atack.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Disarmed.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Idle.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Idle_Disarmed.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Jump_Disarmed.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Shield.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Sword_Atack.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Player_Walk.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\PositiveCoin.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\PositiveCoins.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Quiver.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Quiver.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Raspberry.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\run-1.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Sword.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\SwordV7.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\SwordV7_0000_Capa-34.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Tohem.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\TothemV00.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Volcano.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Volcano.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Waterfall.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Waterfall.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Waterfall00.anim
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Waterfall00V2_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Waterfall00_0.controller
+D:\Projecte UOC\Desenvolupament\Pac3\Vk91\Viking\Assets\Animations\Waterfall00_1.controller

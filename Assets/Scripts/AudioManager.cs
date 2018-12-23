@@ -52,18 +52,10 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	void OnLevelWasLoaded(int index) {
-        // * if (playerT == null) {
-        // * if (FindObjectOfType<Player> () != null) {
-        // * playerT = FindObjectOfType<Player> ().transform;
-        // * }
-        // * }
+      
     }
 
-    // * void Update() {
-    // * if (playerT != null) {
-    // * audioListener.position = playerT.position;
-    // * }
-    // * }
+    
 
     public void SetVolume(float volumePercent, AudioChannel channel) {
 		switch (channel) {

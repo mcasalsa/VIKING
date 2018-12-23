@@ -52,10 +52,6 @@ public class ArrowAtack : MonoBehaviour
 
     public void IncreasePoints(int incrementPoints)
     {
-        //points = points + incrementPoints;
-        //pointsText.text = points.ToString();
-
-
         points = System.Int32.Parse(pointsText.text);
         pointsText.text = (points + incrementPoints).ToString();
     }

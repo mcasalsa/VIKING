@@ -6,41 +6,57 @@ using UnityEngine.UI;
 public class EnemyArrowController : MonoBehaviour
 {
 
-    public float maxSpeed = 1f;
-    public float speed = 1f;
+    // Variables para gestionar el radio de visión y velocidad
+    public float visionRadius = 5;
+    public float speed;
 
-    private Rigidbody2D rb2d;
+    // Variable para guardar al jugador
+    public GameObject player;
+
+    // Variable para guardar la posición inicial
+    Vector3 initialPosition;
     private int points = 0;
     public Text pointsText;
 
-    // Use this for initialization
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+
+        // Recuperem al jugador gracies al tag player.
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        // Desem la posició.
+        initialPosition = transform.position;
+
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        //rb2d.AddForce(Vector2.right * speed);
-        //float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
-       // rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
 
-      //  if (rb2d.velocity.x > -0.01f && rb2d.velocity.x < 0.01f)
-       // {
-        //    speed = -speed;
-       //     rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
-       // }
+        // L'objectiu del atac serà  la posició inicial
+        Vector3 target = initialPosition;
 
-       // if (speed < 0)
-      //  {
-       //     transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-    // else if (speed > 0)
-    // {
-    //     transform.localScale = new Vector3(-1f, 1f, 1f);
-    //  }
-    // }
+        // Si la distancia amb el juagador es menor que el radi de visió de la fletxa llavors es produeix l'atac.
+        float dist = Vector3.Distance(player.transform.position, transform.position);
+        if (dist < visionRadius) target = player.transform.position;
+
+        // La fletxa es mou cap el Player.
+        float fixedSpeed = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
+
+        // Y podemos debugearlo con una línea
+        Debug.DrawLine(transform.position, target, Color.green);
+
+    }
+
+   // dibuix del radi de visió.
+    void OnDrawGizmos()
+    {
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, visionRadius);
+
+    }
+
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -52,13 +68,36 @@ public class EnemyArrowController : MonoBehaviour
                 col.SendMessage("EnemyJump");
                 Destroy(gameObject);
 
+                // Enemic abatut.
+                IncreasePoints(50);
             }
             else
             {
                 col.SendMessage("EnemyKnockBack", transform.position.x);
-                // Destroy(gameObject);
+                Destroy(gameObject);
+            }
+        }
+
+        if (col.gameObject.tag == "Shield")
+        {
+            float yOffset = 0.4f;
+            if (transform.position.y + yOffset < col.transform.position.y)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
             }
         }
     }
-        
+
+    public void IncreasePoints(int incrementPoints)
+    {
+        points = System.Int32.Parse(pointsText.text);
+        pointsText.text = (points + incrementPoints).ToString();
+    }
 }
+
+
+

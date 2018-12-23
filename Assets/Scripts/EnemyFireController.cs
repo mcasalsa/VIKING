@@ -50,15 +50,11 @@ public class EnemyFireController : MonoBehaviour
             if (transform.position.y + yOffset < col.transform.position.y)
             {
                 col.SendMessage("EnemyJump");
-                //Destroy(gameObject);
 
-                // Enemic abatut.
-                
             }
             else
             {
                 col.SendMessage("EnemyKnockBack", transform.position.x);
-                // Destroy(gameObject);
             }
         }
 

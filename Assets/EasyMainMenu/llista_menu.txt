@@ -1,0 +1,1 @@
+La fulla composta de sprites s'utilitza fonamentalment amb dos objectius: el primer, per crear animacions amb sprites, de forma que cada sprite es mostri de forma secuencial com fotogrames; i el segon, per col·locar diverses imatges en una fulla de sprite perquè el nombre d'arxius d'imatge sigui el menor
