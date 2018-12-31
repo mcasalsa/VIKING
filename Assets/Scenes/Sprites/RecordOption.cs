@@ -18,7 +18,7 @@ public class RecordOption : MonoBehaviour
 
         //rText.text = GetMaxRecord().ToString();
         rText.text = GetMaxRecord().ToString();
-        sText.text = GetCurScore().ToString();
+        //sText.text = GetCurScore().ToString();
 
     }
 

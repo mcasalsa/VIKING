@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour {
     public GameObject stopToEngland;
     public GameObject stopToFinland;
     public GameObject stopToHome;
+    public GameObject thunder;
     public float arrowRotation = 0;
     public float fireRotation = 0;
     public Text shieldStatus;
@@ -72,13 +73,13 @@ public class PlayerController : MonoBehaviour {
     public AudioClip shootingArrowSound;
     public AudioClip foodSound;
     public AudioClip itemShopSound;
-    public AudioClip NoitemShopSound;
+    public AudioClip soundThunder;
     public AudioClip idolSound;
-    public AudioClip extraLifeSound;
-    public AudioClip sellerSound;
+    public AudioClip NoitemShopSound;
     public AudioClip stoperSound;
-    public AudioClip menuValidate;
     public GameObject shop;
+   
+
 
 
 
@@ -103,7 +104,7 @@ public class PlayerController : MonoBehaviour {
         //anim.SetBool("Level",1f);
         shieldStatus.text = "Desactivat";
         levelText.text = "1 Amèrica";
-
+        
 
         arrowRotation = 0;
         nextlevel = false;
@@ -111,7 +112,17 @@ public class PlayerController : MonoBehaviour {
         // so.
         soundSource = GetComponent<AudioSource>();
 ;
+
         hp = maxHp;
+
+
+
+        soundSource.clip = soundThunder;
+        soundSource.Play();
+
+
+        anim.SetBool("ThunderBool", true);
+        anim.Play("Thunder");
     }
 
     public class SysGuardar : MonoBehaviour
@@ -319,15 +330,30 @@ public class PlayerController : MonoBehaviour {
         {
             PosPlayer = GameObject.FindGameObjectWithTag("Player").transform.position;
             SysGuardar.Guardar_Posicion(PosPlayer);
-            soundSource.clip = menuValidate;
+            soundSource.clip = soundThunder;
             soundSource.Play();
+            anim.SetBool("ThunderBool", true);
+            anim.Play("Thunder");
+            //anim.Play("thunder");
+            //anim.SetBool("thunderBool", false);
+            // anim.SetBool("PlayerIdle", true);
+            //anim.SetBool("thunderBool", false);
+            //thunder.SetActive(true);
+            //anim.SetBool("thunderBool", false);
+
+            //anim.Play("thunder");
+            //thunder.SetActive(false);
         }
 
         if (Input.GetKeyDown("c"))
         {
             GameObject.FindGameObjectWithTag("Player").transform.position = SysGuardar.Cargar_Posicion();
-            soundSource.clip = menuValidate;
+            soundSource.clip = soundThunder;
             soundSource.Play();
+
+
+            anim.SetBool("ThunderBool", true);
+            anim.Play("Thunder");
         }
         //Debug.DrawLine(transform.position, target, Color.green);
 

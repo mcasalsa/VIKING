@@ -103,7 +103,6 @@
     <Compile Include="Assets\Scenes\Sprites\PlataformaFalling.cs" />
     <Compile Include="Assets\Scenes\Sprites\PlataformaMovil.cs" />
     <Compile Include="Assets\Scenes\Sprites\PlayerController.cs" />
-    <Compile Include="Assets\Scenes\Sprites\PlayerHealth.cs" />
     <Compile Include="Assets\Scenes\Sprites\PositiveCoin.cs" />
     <Compile Include="Assets\Scenes\Sprites\PotionArticleShop.cs" />
     <Compile Include="Assets\Scenes\Sprites\Quiver.cs" />
@@ -125,7 +124,6 @@
     <Compile Include="Assets\Scripts\CheckGround.cs" />
     <Compile Include="Assets\Scripts\Crosshairs.cs" />
     <Compile Include="Assets\Scripts\DrawSceneLine.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyArrowController.cs" />
     <Compile Include="Assets\Scripts\EnemyBallController.cs" />
     <Compile Include="Assets\Scripts\EnemyBatController.cs" />
@@ -151,24 +149,15 @@
     <Compile Include="Assets\Scripts\FalligDeathController.cs" />
     <Compile Include="Assets\Scripts\FaseAmerica.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\GameUI.cs" />
-    <Compile Include="Assets\Scripts\Gun.cs" />
-    <Compile Include="Assets\Scripts\GunController.cs" />
-    <Compile Include="Assets\Scripts\IDamageable.cs" />
-    <Compile Include="Assets\Scripts\LivingEntity.cs" />
-    <Compile Include="Assets\Scripts\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\MuzzleFlash.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
     <Compile Include="Assets\Scripts\Shell.cs" />
     <Compile Include="Assets\Scripts\SoundLibrary.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
     <Compile Include="Assets\Scripts\ani.cs" />
+    <Compile Include="Assets\Thuncer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\llistatAnim.txt" />

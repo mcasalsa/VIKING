@@ -142,7 +142,6 @@
     <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
-    <Compile Include="Assets\Editor\MapEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\llistatAnim.txt" />
