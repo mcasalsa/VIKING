@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EnemyBatController : MonoBehaviour
 {
 
-    // Variables para gestionar el radio de visión y velocidad
+    // Variables per gestionar ek radi de visió i la velocitat
     public float visionRadius=2500;
     public float speed;
 
@@ -17,38 +17,44 @@ public class EnemyBatController : MonoBehaviour
     Vector3 initialPosition;
     private int points = 0;
     public Text pointsText;
+    public SpriteRenderer spr1;
+    public SpriteRenderer spr50;
+
 
     void Start()
     {
 
-        // Recuperamos al jugador gracias al Tag
+        // Recuperem al jugador gracias al Tag
         player = GameObject.FindGameObjectWithTag("Player");
 
-        // Guardamos nuestra posición inicial
+        // Desem la  posició inicial
         initialPosition = transform.position;
+        Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+        spr50.color = color2;
 
     }
 
     void Update()
     {
 
-        // Por defecto nuestro objetivo siempre será nuestra posición inicial
+        // Per defecte l'objectiu serà a la nostra posició inical.
         Vector3 target = initialPosition;
 
         // Pero si la distancia hasta el jugador es menor que el radio de visión el objetivo será él
         float dist = Vector3.Distance(player.transform.position, transform.position);
         if (dist < visionRadius) target = player.transform.position;
 
-        // Finalmente movemos al enemigo en dirección a su target
+
+        //Moure el ratpenat cap al player.
         float fixedSpeed = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
 
-        // Y podemos debugearlo con una línea
+        // sols per fer debugg.
         Debug.DrawLine(transform.position, target, Color.green);
 
     }
 
-    // Podemos dibujar el radio de visión sobre la escena dibujando una esfera
+    //Dibuxem el radi de visió del ratpenat. Es veura en el inpector no en el joc.
     void OnDrawGizmos()
     {
 
@@ -58,7 +64,17 @@ public class EnemyBatController : MonoBehaviour
     }
 
 
-void OnTriggerEnter2D(Collider2D col)
+    IEnumerator TimeDelay()
+    {
+
+        Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+        spr1.color = color2;
+        spr50.color = Color.white; ;
+        yield return new WaitForSeconds(0.2f);
+        Destroy(gameObject);
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -66,34 +82,33 @@ void OnTriggerEnter2D(Collider2D col)
             if (transform.position.y + yOffset < col.transform.position.y)
             {
                 col.SendMessage("EnemyJump");
-                Destroy(gameObject);
-
-                // Enemic abatut.
+                // transform.localScale = new Vector3(-1f, 1f, 1f);
                 IncreasePoints(50);
             }
             else
             {
+                // transform.localScale = new Vector3(-1f, 1f, 1f);
                 col.SendMessage("EnemyKnockBack", transform.position.x);
-                // Destroy(gameObject);
             }
         }
 
         if (col.gameObject.tag == "Arrow")
         {
+            spr1.color = Color.white;
+
             float yOffset = 0.4f;
             if (transform.position.y + yOffset < col.transform.position.y)
             {
-                //col.SendMessage("EnemyJump");
-                Destroy(gameObject);
-
                 // Enemic abatut.
+                //transform.localScale = new Vector3(-1f, 1f, 1f);
                 IncreasePoints(50);
             }
             else
             {
-                //col.SendMessage("EnemyKnockBack", transform.position.x);
-                Destroy(gameObject);
+                // Enemic abatut.
+                // transform.localScale = new Vector3(-1f, 1f, 1f);
                 IncreasePoints(50);
+                //StartCoroutine(TimeDelay());
             }
         }
 
@@ -102,32 +117,35 @@ void OnTriggerEnter2D(Collider2D col)
             float yOffset = 0.4f;
             if (transform.position.y + yOffset < col.transform.position.y)
             {
-                //col.SendMessage("EnemyJump");
-                Destroy(gameObject);
-
                 // Enemic abatut.
+                // transform.localScale = new Vector3(-1f, 1f, 1f);
                 IncreasePoints(50);
+                //StartCoroutine(TimeDelay());
             }
             else
             {
-                //col.SendMessage("EnemyKnockBack", transform.position.x);
-                Destroy(gameObject);
+                //transform.localScale = new Vector3(-1f, 1f, 1f);
                 IncreasePoints(50);
+                //StartCoroutine(TimeDelay());
             }
         }
     }
 
     public void IncreasePoints(int incrementPoints)
     {
-        //points = points + incrementPoints;
-        //pointsText.text = points.ToString();
-
-
         points = System.Int32.Parse(pointsText.text);
         pointsText.text = (points + incrementPoints).ToString();
+        StartCoroutine(TimeDelay());
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.tag == "Arrow" || collider.tag == "Sword")
+        {
+            // pasem'avís de dany a transparent.
+            Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+            spr50.color = Color.white;
+            StartCoroutine(TimeDelay());
+        }
     }
 }
-
-
-
-   

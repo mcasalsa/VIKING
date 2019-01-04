@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-
+using System;
 
 public class PlayerController : MonoBehaviour {
+
     Vector3 target;
     public  Vector3 PosPlayer;
     public float maxSpeed = 5f;
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;
     private Animator anim;
     private SpriteRenderer spr;
+    public SpriteRenderer spr2;
     private bool jump;
     private bool doubleJump;
     private bool movement = true;
@@ -91,6 +92,8 @@ public class PlayerController : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spr = GetComponent<SpriteRenderer>();
+        Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0/255f);
+        spr2.color = color2;
         arrow = GameObject.Find("Arrow"); ;
         healthbar = GameObject.Find("Healthbar");
         //stopToIsland = GameObject.Find("StoperToIsland");
@@ -100,6 +103,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("ArrowsAmunition", false);
         anim.SetBool("ShieldAtack", false);
         anim.SetBool("NextLevel", false);
+        anim.SetBool("EinarDamaged15", false);
         //anim.SetBool("PlayerDead", false);
         //anim.SetBool("Level",1f);
         shieldStatus.text = "Desactivat";
@@ -304,10 +308,7 @@ public class PlayerController : MonoBehaviour {
 
         }
         
-
-        
-
-       
+ 
 
         // saltem.
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
@@ -334,15 +335,6 @@ public class PlayerController : MonoBehaviour {
             soundSource.Play();
             anim.SetBool("ThunderBool", true);
             anim.Play("Thunder");
-            //anim.Play("thunder");
-            //anim.SetBool("thunderBool", false);
-            // anim.SetBool("PlayerIdle", true);
-            //anim.SetBool("thunderBool", false);
-            //thunder.SetActive(true);
-            //anim.SetBool("thunderBool", false);
-
-            //anim.Play("thunder");
-            //thunder.SetActive(false);
         }
 
         if (Input.GetKeyDown("c"))
@@ -355,9 +347,11 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("ThunderBool", true);
             anim.Play("Thunder");
         }
-        //Debug.DrawLine(transform.position, target, Color.green);
+
 
     }
+
+
 
     void FixedUpdate() {
 
@@ -374,7 +368,7 @@ public class PlayerController : MonoBehaviour {
         if (!movement)
         {
             h = 0;
-            //shop.SetActive(false);
+
         }
 
         rb2d.AddForce(Vector2.right * speed * h);
@@ -383,14 +377,16 @@ public class PlayerController : MonoBehaviour {
         rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
 
         if (h > 0.1f) {
+
+
             transform.localScale = new Vector3(1f, 1f, 1f);
-            Parallax(h);
+            //Parallax(h);
             //shop.SetActive(false);
         }
 
         if (h < -0.1f) {
             transform.localScale = new Vector3(-1f, 1f, 1f);
-            Parallax(h);
+            //Parallax(h);
         }
 
         if (jump) {
@@ -399,7 +395,6 @@ public class PlayerController : MonoBehaviour {
             jump = false;
         }
 
-        //Debug.Log(rb2d.velocity.x);
         // si apretem cap a la esquerra girem tambe el tir de fletxa.
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -413,11 +408,14 @@ public class PlayerController : MonoBehaviour {
 
     void OnBecameInvisible() {
         transform.position = new Vector3(-1, 0, 0);
+
     }
 
     public void EnemyJump() {
         jump = true;
     }
+
+
 
     // Ens ha tocat un enemic.
     public void EnemyKnockBack(float enemyPosX) {
@@ -429,29 +427,74 @@ public class PlayerController : MonoBehaviour {
         movement = false;
         Invoke("EnableMovement", 0.7f);
 
-        Color color = new Color(255 / 255f, 106 / 255f, 0 / 255f);
-        spr.color = color;
-
         // Restem vida enviant y¡un missage a la fució TakeDamage del scrot HealthBar.
         healthbar.SendMessage("TakeDamage", 15);
 
-
+       
         soundSource.clip = damageSound;
         soundSource.Play();
+
+
+        // mostrem el dany.
+        transform.localScale = new Vector3(1f, 1f, 1f);
+        //transform.localScale = new Vector3(1f, 1f, 1f);
+        //Parallax(h);
+        // bucle per esperar un petit interval de temps i s'apreci el missatge de dany.
+        StartCoroutine(TimeDelay());
+        movement = false;
+        Invoke("EnableMovement", 0.7f);
+        // paseml'avís de dany a transparent.
+        // Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+        //spr2.color = color2;
+
+
+
     }
+
+
 
     void EnableMovement() {
         movement = true;
         spr.color = Color.white;
-
+        
         //Parallax();
     }
 
 
+    // retardor per que es pugui veure el dany abans no desapareixi.
+    IEnumerator TimeDelay()
+    {
 
-    // compra del arc.
+        spr2.color = Color.white; ;
+        yield return new WaitForSeconds(3f);
+        Color color2 = new Color(255 / 255f, 255 / 255f, 255 / 255f, 0 / 255f);
+        spr2.color = color2;
+        //Destroy(gameObject);
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.tag == "Enemy" || collider.tag == "Spikes")
+        {
+            // orientem el missatge.
+                transform.localScale = new Vector3(1f, 1f, 1f);
+
+
+    
+            StartCoroutine(TimeDelay());
+            // paseml'avís de dany a transparent.
+            Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+            spr2.color = color2;
+            
+        }
+    }
+
+
+   
     void OnTriggerEnter2D(Collider2D collider)
     {
+        
+
         if (collider.tag == "FallinDeath")
         {
             // so recollir moneda.

@@ -49,16 +49,21 @@ public class Shop : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
 
-        shop.SetActive(true);
-        //pauseGame=false;
-        //Invoke("Pausated", 0.1f);
-        //shop.SetActive(true);
-        //shop.SetActive(true);
-        //Time.timeScale = (pauseGame) ? 0f : 1f;
+      
 
-        //Time.timeScale = (pauseGame) ? 0f : 1f;
-        //pausated = GameObject.Find("Pause");
-       // Invoke("Pausated", 0.1f);
+        if (collider.tag == "Player")
+        {
+            shop.SetActive(true);
+        }
+       
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.tag == "Player")
+        {
+            shop.SetActive(false);
+        }
     }
 
     // compra de fletxes.
@@ -155,7 +160,7 @@ public class Shop : MonoBehaviour
         }
     }
 
-    // compra de escut.
+    // compra de destral.
     public void AxeArticle()
     {
         sumPositiveCoins = System.Int32.Parse(coinsText.text);
@@ -175,18 +180,7 @@ public class Shop : MonoBehaviour
         }
     }
 
-    public void ExitShop()
-    {
-        shop.SetActive(false);
-        //pausated = GameObject.Find("Pause");
-       // Invoke("Pausated", 1f);
-        //pauseGame = false;
-
-        //Time.timeScale = (pauseGame) ? 0f : 1f;
-        //Invoke("Pausated", 0.1f);
-        // Invoke("Pausated", 1f);
-        //Time.timeScale = 0f;
-    }
+   
 
     public void Pausated()
     {

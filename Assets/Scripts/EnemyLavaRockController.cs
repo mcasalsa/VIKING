@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class EnemyLavaRockController : MonoBehaviour
 {
 
-    // Variables para gestionar el radio de visión y velocidad
+    // radi visión i velocitat.
     public float visionRadius = 25;
     public float speed;
 
-    // Variable para guardar al jugador
+    // guardar al jugador
     public GameObject player;
 
-    // Variable para guardar la posición inicial
+    // guardar la posició inicial
     Vector3 initialPosition;
     private int points = 0;
     public Text pointsText;
@@ -28,44 +28,48 @@ public class EnemyLavaRockController : MonoBehaviour
     public AudioClip lavaStoneExplosionSound;
     AudioSource soundSource;
 
+    public SpriteRenderer spr1;
+    public SpriteRenderer spr50;
 
     void Start()
     {
         c1 = 255;
         c2 = 255;
         Color color = new Color(255, 255, 255);
-        // Recuperamos al jugador gracias al Tag
+        //Recuperem la posició del player.
         player = GameObject.FindGameObjectWithTag("Player");
 
-        // Guardamos nuestra posición inicial
+        // Desem la posicio inicial.
         initialPosition = transform.position;
-        stonePoints = 200;
+        stonePoints = 150;
         spr = GetComponent<SpriteRenderer>();
         //bear = GameObject.Find("EnemyBear");
 
         soundSource = GetComponent<AudioSource>();
+        Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+        spr50.color = color2;
     }
 
     void Update()
     {
 
-        // Por defecto nuestro objetivo siempre será nuestra posición inicial
+        
         Vector3 target = initialPosition;
 
-        // Pero si la distancia hasta el jugador es menor que el radio de visión el objetivo será él
+        // Pero si la distancia hasta el jugador es menor que el radio de visión el objetivo será éll.
         float dist = Vector3.Distance(player.transform.position, transform.position);
         if (dist < visionRadius) target = player.transform.position;
 
-        // Finalmente movemos al enemigo en dirección a su target
+        // Movem el enemic cap el player.
         float fixedSpeed = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
 
-        // Y podemos debugearlo con una línea
+     
         Debug.DrawLine(transform.position, target, Color.green);
 
     }
 
-    // Podemos dibujar el radio de visión sobre la escena dibujando una esfera
+    // Per debugg
     void OnDrawGizmos()
     {
 
@@ -74,6 +78,15 @@ public class EnemyLavaRockController : MonoBehaviour
 
     }
 
+    IEnumerator TimeDelay()
+    {
+
+        //Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+        //spr1.color = color2;
+        spr50.color = Color.white; ;
+        yield return new WaitForSeconds(0.25f);
+        // Destroy(gameObject);
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -95,31 +108,9 @@ public class EnemyLavaRockController : MonoBehaviour
             }
         }
 
-        if (col.gameObject.tag == "Arrow")
-        {
-            float yOffset = 0.4f;
-            stonePoints = stonePoints - 50;
+       
 
-            if (transform.position.y + yOffset < col.transform.position.y)
-            {
-                //col.SendMessage("EnemyJump");
-                soundSource.clip = lavaStoneExplosionSound;
-                soundSource.Play();
-                Destroy(gameObject);
-
-                // Enemic abatut.
-                IncreasePoints(50);
-            }
-            else
-            {
-                //col.SendMessage("EnemyKnockBack", transform.position.x);
-
-
-
-            }
-        }
-
-        if (col.gameObject.tag == "Sword")
+        if (col.gameObject.tag == "Sword" || col.gameObject.tag == "Arrow" || col.gameObject.tag == "Axe")
         {
             float yOffset = 0.4f;
 
@@ -135,12 +126,20 @@ public class EnemyLavaRockController : MonoBehaviour
             {
                 soundSource.clip = lavaStoneExplosionSound;
                 soundSource.Play();
-                Destroy(gameObject);
                 IncreasePoints(50);
+                Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+                
+                spr50.color = color2;
+                Destroy(gameObject);
+
             }
             else
             {
                 //col.SendMessage("EnemyKnockBack", transform.position.x);
+                //c1 = c1 - 50;
+                //c2 = c2 - 50;
+                //Color color2 = new Color(255 / 255f, c1 / 255f, c2 / 255f);
+                //spr1.color = color2;
             }
             if (transform.position.y + yOffset < col.transform.position.y)
             {
@@ -158,12 +157,20 @@ public class EnemyLavaRockController : MonoBehaviour
 
     public void IncreasePoints(int incrementPoints)
     {
-        //points = points + incrementPoints;
-        //pointsText.text = points.ToString();
-
-
         points = System.Int32.Parse(pointsText.text);
         pointsText.text = (points + incrementPoints).ToString();
+        StartCoroutine(TimeDelay());
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if ((collider.gameObject.tag == "Arrow") || (collider.gameObject.tag == "Sword") || (collider.gameObject.tag == "Axe"))
+        {
+            // pasem'avís de dany a transparent.
+            Color color2 = new Color(255 / 255f, 255 / 255f, 0 / 255f, 0 / 255f);
+            spr50.color = Color.white;
+            StartCoroutine(TimeDelay());
+        }
     }
 }
 
