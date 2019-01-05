@@ -51,10 +51,10 @@ public class Shop : MonoBehaviour
 
       
 
-        if (collider.tag == "Player")
-        {
+       // if (collider.tag == "Player")
+        //{
             shop.SetActive(true);
-        }
+        //}
        
     }
 

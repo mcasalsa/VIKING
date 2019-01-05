@@ -14,6 +14,7 @@ public class Pause : MonoBehaviour {
         // canvasPause = GameObject.Find("CanvasPause");
         canvasPause = GetComponent<Canvas>();
         canvasPause.enabled=pauseGame;
+
     }
 
     // Update is called once per frame
@@ -29,17 +30,19 @@ public class Pause : MonoBehaviour {
 
         }
 
-        // recla m carreguem menu.
+        // tecla m carreguem menu.
         if (Input.GetKeyDown("m"))
         {
             SceneManager.LoadScene("MainMenu");
         }
 
-        // tecla escape, sortir del joc.
+        // tecla escape. Ens dona la possibilitat d'anar al menu principal o sortir de joc.
         if (Input.GetKeyDown("escape"))
         {
-            Application.Quit();
+            SceneManager.LoadScene("GameOverV2");
         }
+
+
     }
 
     public void Pausated()
@@ -50,7 +53,10 @@ public class Pause : MonoBehaviour {
         // operador ternari ?, si val 0 la pausa esta desactivada i posarem 1 per activar-la i a la inversa.
         Time.timeScale = (pauseGame) ? 0f : 1f;
     }
+
+   
 }
+
 
 
 

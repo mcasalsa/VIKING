@@ -91,7 +91,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CloseShop.cs" />
     <Compile Include="Assets\EasyMainMenu\Scripts\Main Menu Scripts\MainMenuController.cs" />
     <Compile Include="Assets\Scenes\Sprites\HappyEndingController.cs" />
     <Compile Include="Assets\Scenes\Sprites\HealthBar.cs" />
@@ -155,9 +154,9 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Shell.cs" />
     <Compile Include="Assets\Scripts\SoundLibrary.cs" />
+    <Compile Include="Assets\Scripts\Thuncer.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
     <Compile Include="Assets\Scripts\ani.cs" />
-    <Compile Include="Assets\Thuncer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\llistatAnim.txt" />
